@@ -19,23 +19,23 @@ export default function DiagnosticTool() {
   };
 
   const checkedCount = Object.values(checks).filter(Boolean).length;
-  
+
   const getRecommendation = () => {
     if (checkedCount >= 3) {
       return {
-        result: "公式サイトでの申請をおすすめします",
+        result: "Zalecamy złożenie wniosku na oficjalnej stronie",
         color: "text-blue-600",
         bgColor: "bg-blue-50",
         borderColor: "border-blue-500",
-        reason: "英語に自信があり、自分で手続きできる方には公式サイトが最もコストパフォーマンスが良い選択です。"
+        reason: "Dla osób biegłych w angielskim, które chcą samodzielnie załatwić formalności, oficjalna strona jest najbardziej opłacalnym wyborem."
       };
     } else {
       return {
-        result: "代行サービスの利用をおすすめします",
+        result: "Zalecamy skorzystanie z usług pośrednika",
         color: "text-orange-600",
         bgColor: "bg-orange-50",
         borderColor: "border-orange-500",
-        reason: "サポートが必要な場合や英語に不安がある場合は、代行サービスの方が安心して申請できます。"
+        reason: "Jeśli potrzebujesz wsparcia lub nie czujesz się pewnie z angielskim, usługa pośrednika zapewni Ci spokojne przejście przez procedurę."
       };
     }
   };
@@ -45,63 +45,63 @@ export default function DiagnosticTool() {
   return (
     <div className="bg-gradient-to-br from-purple-600 to-purple-800 text-white rounded-lg p-8">
       <h2 className="font-montserrat font-bold text-2xl mb-6 text-center">
-        どちらを選ぶべきか？診断
+        Co wybrać? Sprawdź!
       </h2>
       <div className="bg-white text-gray-800 rounded-lg p-6 space-y-4">
         <div className="space-y-3">
           <div className="flex items-start space-x-3">
-            <input 
-              type="checkbox" 
-              id="q1" 
+            <input
+              type="checkbox"
+              id="q1"
               className="mt-1 w-4 h-4 cursor-pointer"
               checked={checks.q1}
               onChange={() => handleCheckChange('q1')}
             />
             <label htmlFor="q1" className="cursor-pointer">
-              英語での入力に自信がある
+              Czuję się pewnie, wypełniając formularze po angielsku
             </label>
           </div>
           <div className="flex items-start space-x-3">
-            <input 
-              type="checkbox" 
-              id="q2" 
+            <input
+              type="checkbox"
+              id="q2"
               className="mt-1 w-4 h-4 cursor-pointer"
               checked={checks.q2}
               onChange={() => handleCheckChange('q2')}
             />
             <label htmlFor="q2" className="cursor-pointer">
-              自分で手続きするのが好きだ
+              Wolę samodzielnie załatwiać formalności
             </label>
           </div>
           <div className="flex items-start space-x-3">
-            <input 
-              type="checkbox" 
-              id="q3" 
+            <input
+              type="checkbox"
+              id="q3"
               className="mt-1 w-4 h-4 cursor-pointer"
               checked={checks.q3}
               onChange={() => handleCheckChange('q3')}
             />
             <label htmlFor="q3" className="cursor-pointer">
-              費用を最小限に抑えたい
+              Chcę zminimalizować koszty
             </label>
           </div>
           <div className="flex items-start space-x-3">
-            <input 
-              type="checkbox" 
-              id="q4" 
+            <input
+              type="checkbox"
+              id="q4"
               className="mt-1 w-4 h-4 cursor-pointer"
               checked={checks.q4}
               onChange={() => handleCheckChange('q4')}
             />
             <label htmlFor="q4" className="cursor-pointer">
-              記入ミスのリスクを理解している
+              Rozumiem ryzyko błędu przy samodzielnym wypełnianiu
             </label>
           </div>
         </div>
-        
+
         <div className={`border-t pt-4 mt-4 ${recommendation.bgColor} ${recommendation.borderColor} border-l-4 p-4 rounded`}>
           <p className="text-sm text-gray-600 mb-2 font-medium">
-            判定結果（チェック数: {checkedCount}/4）
+            Wynik (zaznaczono: {checkedCount}/4)
           </p>
           <p className={`text-lg font-bold ${recommendation.color} mb-2`}>
             {recommendation.result}
@@ -118,13 +118,13 @@ export default function DiagnosticTool() {
                   rel="noopener noreferrer"
                   className="inline-block bg-blue-600 text-white px-4 py-2 rounded text-sm font-medium hover:bg-blue-700 transition text-center"
                 >
-                  公式サイトで申請 →
+                  Złóż wniosek na oficjalnej stronie →
                 </a>
                 <Link
                   href="/application-guide"
                   className="inline-block bg-white text-blue-600 border-2 border-blue-600 px-4 py-2 rounded text-sm font-medium hover:bg-blue-50 transition text-center"
                 >
-                  申請手順を確認
+                  Sprawdź procedurę
                 </Link>
               </>
             ) : (
@@ -133,7 +133,7 @@ export default function DiagnosticTool() {
                   href="/cost-comparison"
                   className="inline-block bg-orange-600 text-white px-4 py-2 rounded text-sm font-medium hover:bg-orange-700 transition text-center"
                 >
-                  代行サービスを比較 →
+                  Porównaj usługi pośredników →
                 </Link>
                 <a
                   href="https://esta.cbp.dhs.gov"
@@ -141,7 +141,7 @@ export default function DiagnosticTool() {
                   rel="noopener noreferrer"
                   className="inline-block bg-white text-orange-600 border-2 border-orange-600 px-4 py-2 rounded text-sm font-medium hover:bg-orange-50 transition text-center"
                 >
-                  公式サイトも見る
+                  Zobacz oficjalną stronę
                 </a>
               </>
             )}

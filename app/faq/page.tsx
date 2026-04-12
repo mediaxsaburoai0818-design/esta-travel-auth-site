@@ -1,12 +1,12 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "ESTAよくある質問（FAQ） - 申請から渡航までの疑問を解決 | ESTA Guide",
-  description: "ESTA申請に関するよくある質問を網羅的に解説。申請方法、費用、有効期限、トラブル対処法など、あなたの疑問を解決します。",
-  keywords: "ESTA FAQ, よくある質問, 疑問, トラブル, 拒否, 有効期限, ビザとの違い",
+  title: "Najczęściej zadawane pytania (FAQ) o ESTA - od wniosku po podróż | ESTA Guide",
+  description: "Kompleksowe odpowiedzi na najczęściej zadawane pytania dotyczące ESTA. Procedura składania wniosku, koszty, ważność, rozwiązywanie problemów i więcej.",
+  keywords: "ESTA FAQ, najczęściej zadawane pytania, problemy, odrzucenie, ważność, różnica od wizy",
   openGraph: {
-    title: "ESTAよくある質問（FAQ）",
-    description: "25問以上のQ&Aで申請から渡航までの疑問を解決。基本情報、費用、トラブル対処法まで",
+    title: "Najczęściej zadawane pytania (FAQ) o ESTA",
+    description: "Ponad 25 pytań i odpowiedzi - od wniosku po podróż. Podstawowe informacje, koszty i rozwiązywanie problemów",
     type: "article",
   },
 };
@@ -14,120 +14,120 @@ export const metadata = {
 export default function FAQPage() {
   const faqs = [
     {
-      category: "基本情報",
+      category: "Podstawowe informacje",
       questions: [
         {
-          q: "ESTAとは何ですか？",
-          a: "ESTA（Electronic System for Travel Authorization）は、米国への渡航を希望するビザ免除プログラム参加国の国民が、事前に取得する電子渡航認証です。2009年に導入され、90日以内の観光・ビジネス目的での訪問に必要です。"
+          q: "Czym jest ESTA?",
+          a: "ESTA (Electronic System for Travel Authorization) to elektroniczna autoryzacja podróży, którą muszą uzyskać obywatele krajów uczestniczących w Programie Ruchu Bezwizowego przed podróżą do USA. System został wprowadzony w 2009 roku i jest wymagany w przypadku wizyt turystycznych lub biznesowych trwających do 90 dni."
         },
         {
-          q: "日本国民はESTAが必要ですか？",
-          a: "はい。日本はビザ免除プログラム参加国のため、90日以内の観光・ビジネス目的で米国を訪問する場合、ESTAが必要です。ただし、すでに有効な米国ビザを持っている場合はESTAは不要です。"
+          q: "Czy obywatele Polski potrzebują ESTA?",
+          a: "Tak. Polska uczestniczy w Programie Ruchu Bezwizowego, więc w przypadku wizyt turystycznych lub biznesowych w USA trwających do 90 dni wymagane jest posiadanie ESTA. Jeśli jednak posiadasz ważną wizę amerykańską, ESTA nie jest potrzebna."
         },
         {
-          q: "ESTAとビザの違いは何ですか？",
-          a: "ESTAは短期滞在（90日以内）の観光・ビジネス目的で、オンラインで申請できる電子認証（$21）です。ビザは長期滞在や就労目的で、大使館での面接が必要（$185以上）で、承認まで数週間から数ヶ月かかります。"
+          q: "Jaka jest różnica między ESTA a wizą?",
+          a: "ESTA to elektroniczna autoryzacja do krótkich pobytów (do 90 dni) w celach turystycznych lub biznesowych, którą można złożyć online ($21). Wiza jest wymagana do dłuższych pobytów lub pracy, wymaga rozmowy w ambasadzie (co najmniej $185), a jej rozpatrzenie trwa od kilku tygodni do kilku miesięcy."
         },
         {
-          q: "ESTAの有効期限は？",
-          a: "ESTAは発行後2年間、またはパスポートの有効期限までのいずれか早い日まで有効です。有効期間内であれば、何度でも米国に入国できます。"
+          q: "Jak długo jest ważna ESTA?",
+          a: "ESTA jest ważna przez 2 lata od daty wydania lub do daty wygaśnięcia paszportu, w zależności od tego, co nastąpi wcześniej. W okresie ważności można wielokrotnie wjeżdżać do USA."
         }
       ]
     },
     {
-      category: "申請プロセス",
+      category: "Procedura składania wniosku",
       questions: [
         {
-          q: "申請にどれくらい時間がかかりますか？",
-          a: "フォーム記入には約15-20分かかります。承認は通常数分で完了しますが、最長72時間かかる場合もあります。渡航予定日の少なくとも72時間前には申請することをおすすめします。"
+          q: "Ile czasu zajmuje złożenie wniosku?",
+          a: "Wypełnienie formularza zajmuje około 15-20 minut. Zatwierdzenie następuje zwykle w ciągu kilku minut, ale w niektórych przypadkach może potrwać do 72 godzin. Zalecamy złożenie wniosku co najmniej 72 godziny przed planowaną podróżą."
         },
         {
-          q: "申請は何日前にすべきですか？",
-          a: "渡航予定日の少なくとも72時間前に申請してください。ただし、審査に時間がかかる可能性もあるため、1週間以上前の申請が理想的です。ESTAは2年間有効なので、渡航予定が決まったらすぐに申請しても問題ありません。"
+          q: "Ile dni przed podróżą należy złożyć wniosek?",
+          a: "Wniosek należy złożyć co najmniej 72 godziny przed planowaną datą podróży. Jednak ze względu na możliwość dłuższego rozpatrywania, idealnie jest złożyć wniosek co najmniej tydzień wcześniej. ESTA jest ważna 2 lata, więc można ją złożyć natychmiast po ustaleniu planów podróży."
         },
         {
-          q: "パスポートを更新したらどうなりますか？",
-          a: "パスポートを更新した場合、新しいパスポートでESTAを再申請する必要があります。ESTAはパスポート番号と紐付けられているため、パスポート番号が変わると以前のESTAは無効になります。"
+          q: "Co się stanie, jeśli wymienię paszport?",
+          a: "W przypadku wymiany paszportu konieczne jest ponowne złożenie wniosku ESTA z nowym paszportem. ESTA jest powiązana z numerem paszportu, więc zmiana numeru paszportu powoduje unieważnienie poprzedniej ESTA."
         },
         {
-          q: "グループで申請できますか？",
-          a: "はい、公式サイトではグループ申請機能があり、一度に複数人の申請ができます。ただし、料金は1人ずつかかります（$21/人）。"
+          q: "Czy można złożyć wniosek grupowy?",
+          a: "Tak, oficjalna strona oferuje funkcję składania wniosków grupowych, która umożliwia złożenie kilku wniosków jednocześnie. Opłata jest pobierana za każdą osobę ($21/osobę)."
         }
       ]
     },
     {
-      category: "費用と支払い",
+      category: "Koszty i płatności",
       questions: [
         {
-          q: "ESTAの費用はいくらですか？",
-          a: "公式サイトでの申請費用は$21です。内訳は申請処理費$4と承認費$17です。代行サービスを利用する場合は$80-200程度かかります。"
+          q: "Ile kosztuje ESTA?",
+          a: "Oficjalna opłata wynosi $21. W tym: opłata za rozpatrzenie $4 i opłata za zatwierdzenie $17. Usługi pośredników kosztują od $80 do $200."
         },
         {
-          q: "支払い方法は？",
-          a: "公式サイトでは、クレジットカード（Visa、Mastercard、American Express、Discover）またはPayPalが利用できます。デビットカードも対応しています。"
+          q: "Jakie są dostępne metody płatności?",
+          a: "Na oficjalnej stronie można płacić kartą kredytową (Visa, Mastercard, American Express, Discover) lub przez PayPal. Akceptowane są również karty debetowe."
         },
         {
-          q: "拒否された場合、返金されますか？",
-          a: "公式サイトの場合、$4の処理費は返金されませんが、$17の承認費は承認された場合のみ請求されます。つまり、拒否された場合は$4のみの負担となります。代行サービスの返金ポリシーは業者によって異なります。"
+          q: "Czy w przypadku odrzucenia wniosku otrzymam zwrot pieniędzy?",
+          a: "Na oficjalnej stronie opłata za rozpatrzenie ($4) nie podlega zwrotowi, ale opłata za zatwierdzenie ($17) jest pobierana tylko w przypadku pozytywnej decyzji. Oznacza to, że w przypadku odrzucenia poniesiesz koszt jedynie $4. Polityka zwrotów pośredników różni się w zależności od firmy."
         }
       ]
     },
     {
-      category: "トラブルシューティング",
+      category: "Rozwiązywanie problemów",
       questions: [
         {
-          q: "申請が拒否されました。どうすれば？",
-          a: "ESTAが拒否された場合、米国大使館でB-2観光ビザを申請する必要があります。ビザ申請には面接が必要で、費用は$185です。拒否理由は通知されないため、心当たりがある場合はそれを踏まえてビザ申請を行ってください。"
+          q: "Mój wniosek został odrzucony. Co robić?",
+          a: "W przypadku odrzucenia ESTA konieczne jest złożenie wniosku o wizę turystyczną B-2 w ambasadzie USA. Wniosek wizowy wymaga rozmowy kwalifikacyjnej, a koszt wynosi $185. Powód odrzucenia nie jest podawany, więc jeśli masz jakieś przypuszczenia, weź je pod uwagę przy składaniu wniosku wizowego."
         },
         {
-          q: "間違った情報を入力しました。訂正できますか？",
-          a: "申請後の訂正はできません。ただし、メールアドレスや渡航情報など一部の項目は、承認後に「申請情報の更新」で変更できます。名前やパスポート番号など重要な情報を間違えた場合は、新規に申請し直す必要があります。"
+          q: "Podałem błędne informacje. Czy mogę je poprawić?",
+          a: "Korekta po złożeniu wniosku nie jest możliwa. Jednak niektóre dane, takie jak adres e-mail czy informacje o podróży, można zaktualizować po zatwierdzeniu w sekcji &quot;Update Application&quot;. W przypadku błędu w ważnych danych, takich jak imię i nazwisko lub numer paszportu, konieczne jest złożenie nowego wniosku."
         },
         {
-          q: "承認が72時間以上かかっています。大丈夫？",
-          a: "通常は72時間以内に結果が出ますが、それ以上かかる場合は、公式サイトで申請状況を確認してください。「審査中（Pending）」の場合は待つ必要があります。不安な場合は、米国税関・国境警備局（CBP）に問い合わせることもできます。"
+          q: "Minęło ponad 72 godziny i nadal nie mam odpowiedzi. Czy to normalne?",
+          a: "Zwykle wynik jest dostępny w ciągu 72 godzin. Jeśli trwa dłużej, sprawdź status wniosku na oficjalnej stronie. Jeśli status to &quot;Pending&quot; (W trakcie rozpatrywania), należy poczekać. W razie wątpliwości można skontaktować się z amerykańską Służbą Celną i Ochrony Granic (CBP)."
         },
         {
-          q: "ESTAが承認されましたが、印刷は必要ですか？",
-          a: "印刷は必須ではありません。ESTAは電子的にパスポートと紐付けられているため、航空会社や入国審査官はシステムで確認できます。ただし、念のため承認番号を控えておくか、承認メールを保存しておくことをおすすめします。"
+          q: "ESTA została zatwierdzona, ale czy muszę ją wydrukować?",
+          a: "Wydruk nie jest wymagany. ESTA jest elektronicznie powiązana z paszportem, więc linie lotnicze i funkcjonariusze kontroli granicznej mogą ją zweryfikować w systemie. Jednak dla bezpieczeństwa zalecamy zapisanie numeru zatwierdzenia lub zachowanie e-maila z potwierdzeniem."
         }
       ]
     },
     {
-      category: "渡航",
+      category: "Podróż",
       questions: [
         {
-          q: "ESTAで何日間滞在できますか？",
-          a: "ESTAでは、1回の訪問で最大90日間滞在できます。ただし、180日間のうち合計90日以内という制限もあるため、頻繁に米国を訪問する場合は注意が必要です。"
+          q: "Jak długo można przebywać w USA z ESTA?",
+          a: "Z ESTA można przebywać w USA maksymalnie 90 dni podczas jednej wizyty. Obowiązuje również limit 90 dni łącznie w ciągu 180 dni, więc osoby często odwiedzające USA powinny na to zwrócić uwagę."
         },
         {
-          q: "ESTAで働けますか？",
-          a: "いいえ、ESTAでは就労できません。米国で働く場合は、就労ビザ（H-1B、L-1など）が必要です。無給のボランティア活動やビジネスミーティングへの参加は可能ですが、報酬を伴う仕事は違法です。"
+          q: "Czy z ESTA można pracować w USA?",
+          a: "Nie, ESTA nie uprawnia do pracy w USA. Do pracy w USA potrzebna jest wiza pracownicza (np. H-1B, L-1). Wolontariat nieodpłatny lub udział w spotkaniach biznesowych jest dozwolony, ale praca zarobkowa jest nielegalna."
         },
         {
-          q: "カナダやメキシコ経由でも必要ですか？",
-          a: "はい、カナダやメキシコから陸路で米国に入国する場合でもESTAが必要です。ただし、カナダやメキシコへの訪問日数は90日間の滞在期間にカウントされます。"
+          q: "Czy ESTA jest potrzebna przy wjeździe przez Kanadę lub Meksyk?",
+          a: "Tak, ESTA jest wymagana również przy wjeździe do USA drogą lądową z Kanady lub Meksyku. Należy pamiętać, że dni spędzone w Kanadzie lub Meksyku są wliczane do 90-dniowego limitu pobytu."
         },
         {
-          q: "ESTAがあれば必ず入国できますか？",
-          a: "いいえ。ESTAは米国への渡航認証であり、入国を保証するものではありません。入国の可否は、米国到着時の入国審査官が最終的に判断します。適切な書類を持ち、質問に正直に答えることが重要です。"
+          q: "Czy posiadanie ESTA gwarantuje wjazd do USA?",
+          a: "Nie. ESTA to autoryzacja podróży, a nie gwarancja wjazdu. Ostateczną decyzję o wjeździe podejmuje funkcjonariusz kontroli granicznej po przybyciu do USA. Ważne jest posiadanie odpowiednich dokumentów i szczere odpowiadanie na pytania."
         }
       ]
     },
     {
-      category: "特別なケース",
+      category: "Szczególne przypadki",
       questions: [
         {
-          q: "二重国籍者はどうすればいいですか？",
-          a: "二重国籍者の場合、ビザ免除プログラム参加国のパスポートを使用してESTAを申請できます。ただし、特定の国（イラン、イラク、北朝鮮、スーダン、シリア、リビア、ソマリア、イエメン）の国籍も持っている場合、またはこれらの国を2011年以降訪問している場合は、ESTAの対象外となり、ビザ申請が必要です。"
+          q: "Co w przypadku podwójnego obywatelstwa?",
+          a: "Osoby z podwójnym obywatelstwem mogą złożyć wniosek ESTA, używając paszportu kraju uczestniczącego w Programie Ruchu Bezwizowego. Jednak jeśli posiadasz również obywatelstwo określonych krajów (Iran, Irak, Korea Północna, Sudan, Syria, Libia, Somalia, Jemen) lub odwiedziłeś te kraje po 2011 roku, ESTA nie ma zastosowania i konieczne jest złożenie wniosku o wizę."
         },
         {
-          q: "子供も申請が必要ですか？",
-          a: "はい、年齢に関係なく、乳幼児を含むすべての渡航者がESTAを申請する必要があります。親が代理で申請できますが、各自のパスポートとESTAが必要です。"
+          q: "Czy dzieci również muszą złożyć wniosek?",
+          a: "Tak, każdy podróżny, niezależnie od wieku, w tym niemowlęta, musi posiadać ESTA. Rodzice mogą złożyć wniosek w imieniu dziecka, ale każda osoba musi mieć własny paszport i ESTA."
         },
         {
-          q: "犯罪歴がある場合は？",
-          a: "軽微な交通違反（スピード違反、駐車違反など）は通常問題ありません。しかし、逮捕歴や有罪判決がある場合、適格性質問で正直に回答する必要があります。場合によってはESTAが拒否され、ビザ申請が必要になることがあります。"
+          q: "Co w przypadku posiadania rejestru karnego?",
+          a: "Drobne wykroczenia drogowe (przekroczenie prędkości, mandaty parkingowe) zwykle nie stanowią problemu. Jednak w przypadku aresztowania lub wyroku skazującego należy uczciwie odpowiedzieć na pytania kwalifikacyjne. W niektórych przypadkach ESTA może zostać odrzucona i konieczne będzie złożenie wniosku o wizę."
         }
       ]
     }
@@ -136,13 +136,13 @@ export default function FAQPage() {
   return (
     <div className="bg-gray-50 py-12">
       <div className="container mx-auto px-4">
-        {/* ページヘッダー */}
+        {/* Nagłówek strony */}
         <div className="max-w-4xl mx-auto mb-12 text-center">
           <h1 className="font-montserrat font-bold text-4xl mb-4">
-            よくある質問（FAQ）
+            Najczęściej zadawane pytania (FAQ)
           </h1>
           <p className="text-xl text-gray-600">
-            ESTA申請に関する疑問を解決します
+            Odpowiedzi na pytania dotyczące wniosku ESTA
           </p>
         </div>
 
@@ -156,10 +156,10 @@ export default function FAQPage() {
                 {category.questions.map((faq, faqIndex) => (
                   <div key={faqIndex} className="border-l-4 border-gray-200 pl-4 hover:border-blue-400 transition">
                     <h3 className="font-bold text-lg mb-2 text-gray-900">
-                      Q: {faq.q}
+                      P: {faq.q}
                     </h3>
                     <p className="text-gray-700 leading-relaxed">
-                      A: {faq.a}
+                      O: {faq.a}
                     </p>
                   </div>
                 ))}
@@ -167,75 +167,75 @@ export default function FAQPage() {
             </section>
           ))}
 
-          {/* さらに質問がある場合 */}
+          {/* Nie znalazłeś odpowiedzi? */}
           <section className="bg-blue-50 border-2 border-blue-300 rounded-lg p-8">
             <div className="text-center">
               <div className="text-4xl mb-4">❓</div>
               <h2 className="font-bold text-2xl mb-4">
-                質問が解決しませんでしたか？
+                Nie znalazłeś odpowiedzi na swoje pytanie?
               </h2>
               <p className="text-gray-700 mb-6">
-                さらに詳しい情報については、以下のページをご確認ください
+                Więcej szczegółowych informacji znajdziesz na poniższych stronach
               </p>
               <div className="flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-4">
-                <Link 
+                <Link
                   href="/application-guide"
                   className="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition"
                 >
-                  申請手順ガイド
+                  Procedura składania wniosku
                 </Link>
-                <Link 
+                <Link
                   href="/cost-comparison"
                   className="bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition border-2 border-blue-600"
                 >
-                  費用比較
+                  Porównanie kosztów
                 </Link>
               </div>
               <div className="mt-6 pt-6 border-t border-blue-200">
                 <p className="text-sm text-gray-600">
-                  公式の問い合わせ先:<br />
-                  <a 
-                    href="https://esta.cbp.dhs.gov" 
-                    target="_blank" 
+                  Oficjalne źródła informacji:<br />
+                  <a
+                    href="https://esta.cbp.dhs.gov"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-600 underline hover:text-blue-800"
                   >
-                    米国公式ESTAサイト
+                    Oficjalna strona ESTA
                   </a>
-                  {" "}または{" "}
-                  <a 
-                    href="https://jp.usembassy.gov/" 
-                    target="_blank" 
+                  {" "}lub{" "}
+                  <a
+                    href="https://pl.usembassy.gov/"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-600 underline hover:text-blue-800"
                   >
-                    在日米国大使館
+                    Ambasada USA w Polsce
                   </a>
                 </p>
               </div>
             </div>
           </section>
 
-          {/* 重要な注意事項 */}
+          {/* Ważne uwagi */}
           <section className="bg-yellow-50 border-2 border-yellow-400 rounded-lg p-8">
             <div className="flex items-start space-x-4">
               <div className="flex-shrink-0 text-yellow-600 text-4xl">⚠️</div>
               <div>
                 <h2 className="font-bold text-2xl text-yellow-900 mb-4">
-                  重要な注意事項
+                  Ważne uwagi
                 </h2>
                 <ul className="space-y-2 text-gray-800">
                   <li className="flex items-start">
                     <span className="mr-2">•</span>
-                    <span>このページの情報は一般的なガイダンスです。個別の状況については、公式サイトまたは米国大使館にご確認ください。</span>
+                    <span>Informacje na tej stronie mają charakter ogólny. W przypadku indywidualnych sytuacji prosimy o kontakt z oficjalną stroną lub ambasadą USA.</span>
                   </li>
                   <li className="flex items-start">
                     <span className="mr-2">•</span>
-                    <span>ESTA申請時は正確な情報を提供してください。虚偽の申告は米国への入国禁止につながる可能性があります。</span>
+                    <span>Przy składaniu wniosku ESTA podawaj dokładne informacje. Podanie fałszywych danych może skutkować zakazem wjazdu do USA.</span>
                   </li>
                   <li className="flex items-start">
                     <span className="mr-2">•</span>
-                    <span>詐欺サイトにご注意ください。公式サイトは <strong>https://esta.cbp.dhs.gov</strong> のみです。</span>
+                    <span>Uważaj na fałszywe strony. Jedyna oficjalna strona to <strong>https://esta.cbp.dhs.gov</strong>.</span>
                   </li>
                 </ul>
               </div>

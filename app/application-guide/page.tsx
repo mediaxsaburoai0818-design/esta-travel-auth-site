@@ -1,12 +1,12 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "ESTA申請手順ガイド - ステップバイステップで解説 | ESTA Guide",
-  description: "米国ESTA申請の詳細な手順をスクリーンショット付きで解説。申請前の準備から承認までの全ステップを網羅した完全ガイドです。",
-  keywords: "ESTA申請, 申請手順, 申請方法, 記入方法, パスポート, 手続き, ステップガイド",
+  title: "Przewodnik po procedurze ESTA - krok po kroku | ESTA Guide",
+  description: "Szczegółowa procedura składania wniosku ESTA do USA krok po kroku. Kompletny przewodnik od przygotowania do zatwierdzenia wniosku.",
+  keywords: "ESTA wniosek, procedura, jak złożyć wniosek, paszport, krok po kroku, przewodnik",
   openGraph: {
-    title: "ESTA申請手順ガイド - ステップバイステップで解説",
-    description: "米国ESTA申請の詳細な手順を8ステップで解説。よくある記入ミスも紹介",
+    title: "Przewodnik po procedurze ESTA - krok po kroku",
+    description: "Szczegółowa procedura składania wniosku ESTA w 8 krokach. Poznaj najczęstsze błędy przy wypełnianiu formularza",
     type: "article",
   },
 };
@@ -15,48 +15,48 @@ export default function ApplicationGuidePage() {
   return (
     <div className="bg-gray-50 py-12">
       <div className="container mx-auto px-4">
-        {/* ページヘッダー */}
+        {/* Nagłówek strony */}
         <div className="max-w-4xl mx-auto mb-12">
           <h1 className="font-montserrat font-bold text-4xl mb-4">
-            ESTA申請手順ガイド
+            Przewodnik po procedurze ESTA
           </h1>
           <p className="text-xl text-gray-600">
-            公式サイトでのESTA申請方法を、ステップバイステップで詳しく解説します。
+            Szczegółowy opis procedury składania wniosku ESTA na oficjalnej stronie, krok po kroku.
           </p>
         </div>
 
         <div className="max-w-4xl mx-auto space-y-12">
-          {/* 申請前の準備 */}
+          {/* Przygotowanie przed złożeniem wniosku */}
           <section className="bg-white rounded-lg shadow-md p-8">
             <h2 className="font-bold text-2xl mb-6 text-blue-600">
-              申請前の準備
+              Przygotowanie przed złożeniem wniosku
             </h2>
             <div className="space-y-4">
               <div>
-                <h3 className="font-bold text-lg mb-2">必要なもの</h3>
+                <h3 className="font-bold text-lg mb-2">Co będzie potrzebne</h3>
                 <ul className="list-disc pl-6 space-y-2 text-gray-700">
-                  <li>有効なパスポート（渡航予定日から6ヶ月以上有効期限があるもの）</li>
-                  <li>クレジットカードまたはPayPal（支払い用）</li>
-                  <li>メールアドレス（確認通知受信用）</li>
-                  <li>渡航情報（滞在先住所など）</li>
+                  <li>Ważny paszport (ważny co najmniej 6 miesięcy od planowanej daty podróży)</li>
+                  <li>Karta kredytowa lub konto PayPal (do płatności)</li>
+                  <li>Adres e-mail (do otrzymania potwierdzenia)</li>
+                  <li>Informacje o podróży (adres zakwaterowania w USA itp.)</li>
                 </ul>
               </div>
               <div>
-                <h3 className="font-bold text-lg mb-2">所要時間</h3>
+                <h3 className="font-bold text-lg mb-2">Czas potrzebny</h3>
                 <p className="text-gray-700">
-                  フォーム記入: 約15-20分<br />
-                  承認待ち: 数分〜最長72時間
+                  Wypełnienie formularza: ok. 15-20 minut<br />
+                  Oczekiwanie na zatwierdzenie: od kilku minut do max. 72 godzin
                 </p>
               </div>
               <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4">
                 <p className="text-sm text-gray-800">
-                  <strong>重要:</strong> 渡航予定日の少なくとも72時間前には申請を完了させることをおすすめします。
+                  <strong>Ważne:</strong> Zalecamy złożenie wniosku co najmniej 72 godziny przed planowaną datą podróży.
                 </p>
               </div>
             </div>
           </section>
 
-          {/* ステップ1 */}
+          {/* Krok 1 */}
           <section className="bg-white rounded-lg shadow-md p-8">
             <div className="flex items-start space-x-4 mb-6">
               <div className="flex-shrink-0 w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold">
@@ -64,16 +64,16 @@ export default function ApplicationGuidePage() {
               </div>
               <div>
                 <h2 className="font-bold text-2xl text-blue-600">
-                  公式サイトへアクセス
+                  Wejdź na oficjalną stronę
                 </h2>
               </div>
             </div>
             <div className="space-y-4">
               <p className="text-gray-700">
-                公式URL: 
-                <a 
-                  href="https://esta.cbp.dhs.gov" 
-                  target="_blank" 
+                Oficjalny adres URL:
+                <a
+                  href="https://esta.cbp.dhs.gov"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 underline hover:text-blue-800 ml-2"
                 >
@@ -82,19 +82,19 @@ export default function ApplicationGuidePage() {
               </p>
               <div className="bg-red-50 border-l-4 border-red-500 p-4">
                 <p className="text-sm text-gray-800">
-                  <strong>詐欺サイトに注意!</strong> 公式サイト以外のURLで高額な料金を請求するサイトは詐欺の可能性があります。
-                  必ず上記の公式URLから申請してください。
+                  <strong>Uwaga na fałszywe strony!</strong> Strony pod innymi adresami URL, które żądają wysokich opłat, mogą być oszustwem.
+                  Zawsze składaj wniosek wyłącznie pod powyższym oficjalnym adresem URL.
                 </p>
               </div>
               <ol className="list-decimal pl-6 space-y-2 text-gray-700">
-                <li>公式サイト（esta.cbp.dhs.gov）にアクセス</li>
-                <li>トップページで「新規の申請」ボタンをクリック</li>
-                <li>言語を選択（日本語対応）</li>
+                <li>Wejdź na oficjalną stronę (esta.cbp.dhs.gov)</li>
+                <li>Na stronie głównej kliknij przycisk &quot;New Application&quot; (Nowy wniosek)</li>
+                <li>Wybierz język (dostępny język angielski i inne)</li>
               </ol>
             </div>
           </section>
 
-          {/* ステップ2 */}
+          {/* Krok 2 */}
           <section className="bg-white rounded-lg shadow-md p-8">
             <div className="flex items-start space-x-4 mb-6">
               <div className="flex-shrink-0 w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold">
@@ -102,33 +102,33 @@ export default function ApplicationGuidePage() {
               </div>
               <div>
                 <h2 className="font-bold text-2xl text-blue-600">
-                  個人情報の入力
+                  Wprowadź dane osobowe
                 </h2>
               </div>
             </div>
             <div className="space-y-4">
               <p className="text-gray-700">
-                パスポート通りに正確に入力してください。1文字でも間違えると拒否される可能性があります。
+                Wprowadź dane dokładnie tak, jak są zapisane w paszporcie. Nawet jeden błąd w literze może spowodować odrzucenie wniosku.
               </p>
               <div className="bg-blue-50 p-4 rounded">
-                <h3 className="font-bold mb-2">入力項目:</h3>
+                <h3 className="font-bold mb-2">Wymagane dane:</h3>
                 <ul className="list-disc pl-6 space-y-1 text-gray-700 text-sm">
-                  <li>姓名（パスポート記載通り）</li>
-                  <li>生年月日</li>
-                  <li>出生地</li>
-                  <li>国籍</li>
-                  <li>性別</li>
+                  <li>Imię i nazwisko (dokładnie jak w paszporcie)</li>
+                  <li>Data urodzenia</li>
+                  <li>Miejsce urodzenia</li>
+                  <li>Obywatelstwo</li>
+                  <li>Płeć</li>
                 </ul>
               </div>
               <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4">
                 <p className="text-sm text-gray-800">
-                  <strong>ヒント:</strong> パスポートを手元に用意し、見ながら入力すると間違いを防げます。
+                  <strong>Wskazówka:</strong> Przygotuj paszport i wpisuj dane, patrząc bezpośrednio na dokument, aby uniknąć błędów.
                 </p>
               </div>
             </div>
           </section>
 
-          {/* ステップ3 */}
+          {/* Krok 3 */}
           <section className="bg-white rounded-lg shadow-md p-8">
             <div className="flex items-start space-x-4 mb-6">
               <div className="flex-shrink-0 w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold">
@@ -136,29 +136,29 @@ export default function ApplicationGuidePage() {
               </div>
               <div>
                 <h2 className="font-bold text-2xl text-blue-600">
-                  パスポート情報
+                  Dane paszportowe
                 </h2>
               </div>
             </div>
             <div className="space-y-4">
               <div className="bg-blue-50 p-4 rounded">
-                <h3 className="font-bold mb-2">入力項目:</h3>
+                <h3 className="font-bold mb-2">Wymagane dane:</h3>
                 <ul className="list-disc pl-6 space-y-1 text-gray-700 text-sm">
-                  <li>パスポート番号</li>
-                  <li>発行日</li>
-                  <li>有効期限日</li>
-                  <li>発行国（日本）</li>
+                  <li>Numer paszportu</li>
+                  <li>Data wydania</li>
+                  <li>Data ważności</li>
+                  <li>Kraj wydania (Polska)</li>
                 </ul>
               </div>
               <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4">
                 <p className="text-sm text-gray-800">
-                  <strong>重要:</strong> パスポートの有効期限は、米国出国予定日から6ヶ月以上残っている必要があります。
+                  <strong>Ważne:</strong> Paszport musi być ważny co najmniej 6 miesięcy od planowanej daty wyjazdu z USA.
                 </p>
               </div>
             </div>
           </section>
 
-          {/* ステップ4 */}
+          {/* Krok 4 */}
           <section className="bg-white rounded-lg shadow-md p-8">
             <div className="flex items-start space-x-4 mb-6">
               <div className="flex-shrink-0 w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold">
@@ -166,27 +166,27 @@ export default function ApplicationGuidePage() {
               </div>
               <div>
                 <h2 className="font-bold text-2xl text-blue-600">
-                  連絡先情報
+                  Dane kontaktowe
                 </h2>
               </div>
             </div>
             <div className="space-y-4">
               <div className="bg-blue-50 p-4 rounded">
-                <h3 className="font-bold mb-2">入力項目:</h3>
+                <h3 className="font-bold mb-2">Wymagane dane:</h3>
                 <ul className="list-disc pl-6 space-y-1 text-gray-700 text-sm">
-                  <li>現住所（日本の住所）</li>
-                  <li>電話番号（国際形式: +81から始まる）</li>
-                  <li>メールアドレス</li>
+                  <li>Aktualny adres zamieszkania (adres w Polsce)</li>
+                  <li>Numer telefonu (format międzynarodowy: zaczynający się od +48)</li>
+                  <li>Adres e-mail</li>
                 </ul>
               </div>
               <p className="text-gray-700 text-sm">
-                住所の入力形式:<br />
-                例: 1-1-1 Chiyoda, Chiyoda-ku, Tokyo 100-0001, Japan
+                Format adresu:<br />
+                Przykład: ul. Marszałkowska 1, 00-001 Warszawa, Poland
               </p>
             </div>
           </section>
 
-          {/* ステップ5 */}
+          {/* Krok 5 */}
           <section className="bg-white rounded-lg shadow-md p-8">
             <div className="flex items-start space-x-4 mb-6">
               <div className="flex-shrink-0 w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold">
@@ -194,26 +194,26 @@ export default function ApplicationGuidePage() {
               </div>
               <div>
                 <h2 className="font-bold text-2xl text-blue-600">
-                  渡航情報
+                  Informacje o podróży
                 </h2>
               </div>
             </div>
             <div className="space-y-4">
               <div className="bg-blue-50 p-4 rounded">
-                <h3 className="font-bold mb-2">入力項目:</h3>
+                <h3 className="font-bold mb-2">Wymagane dane:</h3>
                 <ul className="list-disc pl-6 space-y-1 text-gray-700 text-sm">
-                  <li>渡航予定日（未定の場合は大まかな予定日）</li>
-                  <li>米国での滞在先住所（ホテル名と住所）</li>
-                  <li>緊急連絡先（米国内）</li>
+                  <li>Planowana data podróży (jeśli nie jest znana, podaj przybliżoną datę)</li>
+                  <li>Adres zakwaterowania w USA (nazwa i adres hotelu)</li>
+                  <li>Kontakt alarmowy w USA</li>
                 </ul>
               </div>
               <p className="text-gray-700 text-sm">
-                滞在先が未定の場合は、「UNKNOWN」と入力できます。
+                Jeśli miejsce zakwaterowania nie jest jeszcze znane, można wpisać &quot;UNKNOWN&quot;.
               </p>
             </div>
           </section>
 
-          {/* ステップ6 */}
+          {/* Krok 6 */}
           <section className="bg-white rounded-lg shadow-md p-8">
             <div className="flex items-start space-x-4 mb-6">
               <div className="flex-shrink-0 w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold">
@@ -221,38 +221,38 @@ export default function ApplicationGuidePage() {
               </div>
               <div>
                 <h2 className="font-bold text-2xl text-blue-600">
-                  適格性に関する質問
+                  Pytania kwalifikacyjne
                 </h2>
               </div>
             </div>
             <div className="space-y-4">
               <p className="text-gray-700">
-                9つのYES/NO質問に答えます。これらの質問は非常に重要で、正直に答える必要があります。
+                Odpowiedz na 9 pytań TAK/NIE. Pytania te są bardzo ważne i należy odpowiadać na nie zgodnie z prawdą.
               </p>
               <div className="bg-red-50 border-l-4 border-red-500 p-4">
                 <p className="text-sm text-gray-800">
-                  <strong>警告:</strong> 虚偽の申告をすると、米国への永久入国禁止になる可能性があります。
-                  必ず正直に答えてください。
+                  <strong>Ostrzeżenie:</strong> Podanie fałszywych informacji może skutkować stałym zakazem wjazdu do USA.
+                  Odpowiadaj zawsze zgodnie z prawdą.
                 </p>
               </div>
               <div className="space-y-3 text-sm text-gray-700">
-                <p><strong>質問例:</strong></p>
+                <p><strong>Przykładowe pytania:</strong></p>
                 <ul className="list-disc pl-6 space-y-1">
-                  <li>伝染病や精神疾患がありますか？</li>
-                  <li>犯罪歴がありますか？</li>
-                  <li>麻薬の使用または所持の経歴がありますか？</li>
-                  <li>テロ活動に関与したことがありますか？</li>
-                  <li>過去に米国ビザが拒否されたことがありますか？</li>
+                  <li>Czy chorujesz na chorobę zakaźną lub zaburzenia psychiczne?</li>
+                  <li>Czy byłeś/byłaś karany/karana?</li>
+                  <li>Czy posiadasz lub posiadałeś/posiadałaś narkotyki?</li>
+                  <li>Czy byłeś/byłaś zaangażowany/zaangażowana w działalność terrorystyczną?</li>
+                  <li>Czy kiedykolwiek odmówiono Ci wizy amerykańskiej?</li>
                 </ul>
                 <p className="mt-3">
-                  <strong>ほとんどの人は全て「NO」と答えます。</strong>
-                  交通違反（スピード違反、駐車違反）は該当しません。
+                  <strong>Większość osób odpowiada na wszystkie pytania &quot;NIE&quot;.</strong>
+                  Wykroczenia drogowe (przekroczenie prędkości, mandaty parkingowe) nie są brane pod uwagę.
                 </p>
               </div>
             </div>
           </section>
 
-          {/* ステップ7 */}
+          {/* Krok 7 */}
           <section className="bg-white rounded-lg shadow-md p-8">
             <div className="flex items-start space-x-4 mb-6">
               <div className="flex-shrink-0 w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold">
@@ -260,30 +260,30 @@ export default function ApplicationGuidePage() {
               </div>
               <div>
                 <h2 className="font-bold text-2xl text-blue-600">
-                  確認と支払い
+                  Weryfikacja i płatność
                 </h2>
               </div>
             </div>
             <div className="space-y-4">
               <ol className="list-decimal pl-6 space-y-2 text-gray-700">
-                <li>すべての入力内容を確認</li>
-                <li>間違いがないか慎重にチェック</li>
-                <li>利用規約に同意</li>
-                <li>支払いページへ進む</li>
-                <li>クレジットカードまたはPayPalで$21を支払う</li>
+                <li>Sprawdź wszystkie wprowadzone dane</li>
+                <li>Dokładnie zweryfikuj, czy nie ma błędów</li>
+                <li>Zaakceptuj regulamin</li>
+                <li>Przejdź do strony płatności</li>
+                <li>Zapłać $21 kartą kredytową lub przez PayPal</li>
               </ol>
               <div className="bg-blue-50 p-4 rounded">
-                <h3 className="font-bold mb-2">支払い詳細:</h3>
+                <h3 className="font-bold mb-2">Szczegóły płatności:</h3>
                 <p className="text-gray-700 text-sm">
-                  料金: $21<br />
-                  内訳: 申請処理費$4 + 承認費$17<br />
-                  支払い方法: Visa、Mastercard、Amex、PayPal
+                  Opłata: $21<br />
+                  W tym: opłata za rozpatrzenie $4 + opłata za zatwierdzenie $17<br />
+                  Metody płatności: Visa, Mastercard, Amex, PayPal
                 </p>
               </div>
             </div>
           </section>
 
-          {/* ステップ8 */}
+          {/* Krok 8 */}
           <section className="bg-white rounded-lg shadow-md p-8">
             <div className="flex items-start space-x-4 mb-6">
               <div className="flex-shrink-0 w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold">
@@ -291,89 +291,89 @@ export default function ApplicationGuidePage() {
               </div>
               <div>
                 <h2 className="font-bold text-2xl text-blue-600">
-                  承認待ち
+                  Oczekiwanie na zatwierdzenie
                 </h2>
               </div>
             </div>
             <div className="space-y-4">
               <p className="text-gray-700">
-                申請が完了すると、申請番号が発行されます。この番号を必ず控えてください。
+                Po złożeniu wniosku otrzymasz numer wniosku. Koniecznie zapisz ten numer.
               </p>
               <div className="bg-green-50 p-4 rounded">
-                <h3 className="font-bold mb-2">承認までの流れ:</h3>
+                <h3 className="font-bold mb-2">Proces zatwierdzenia:</h3>
                 <ul className="list-disc pl-6 space-y-1 text-gray-700 text-sm">
-                  <li><strong>ほとんどの場合:</strong> 数分で承認</li>
-                  <li><strong>審査中:</strong> 72時間以内に結果が出ます</li>
-                  <li><strong>メール通知:</strong> 承認されるとメールが届きます</li>
+                  <li><strong>W większości przypadków:</strong> zatwierdzenie w ciągu kilku minut</li>
+                  <li><strong>W trakcie rozpatrywania:</strong> wynik w ciągu 72 godzin</li>
+                  <li><strong>Powiadomienie e-mail:</strong> po zatwierdzeniu otrzymasz wiadomość e-mail</li>
                 </ul>
               </div>
               <div className="bg-blue-50 p-4 rounded">
-                <h3 className="font-bold mb-2">ステータス確認方法:</h3>
+                <h3 className="font-bold mb-2">Jak sprawdzić status:</h3>
                 <ol className="list-decimal pl-6 space-y-1 text-gray-700 text-sm">
-                  <li>公式サイトにアクセス</li>
-                  <li>「申請状況の確認」をクリック</li>
-                  <li>申請番号とパスポート情報を入力</li>
+                  <li>Wejdź na oficjalną stronę</li>
+                  <li>Kliknij &quot;Check ESTA Status&quot; (Sprawdź status ESTA)</li>
+                  <li>Wprowadź numer wniosku i dane paszportowe</li>
                 </ol>
               </div>
             </div>
           </section>
 
-          {/* よくある記入ミス */}
+          {/* Najczęstsze błędy */}
           <section className="bg-yellow-50 border-2 border-yellow-300 rounded-lg p-8">
             <h2 className="font-bold text-2xl mb-6 text-yellow-900">
-              ⚠️ よくある記入ミス TOP5
+              ⚠️ TOP 5 najczęstszych błędów przy wypełnianiu
             </h2>
             <div className="space-y-4">
               <div>
-                <h3 className="font-bold text-lg mb-1">1. 名前のスペルミス</h3>
+                <h3 className="font-bold text-lg mb-1">1. Błąd w pisowni imienia i nazwiska</h3>
                 <p className="text-gray-800 text-sm">
-                  パスポートと1文字でも違うと拒否されます。必ずパスポートを見ながら入力してください。
+                  Nawet jedna literówka w porównaniu z paszportem spowoduje odrzucenie. Zawsze wpisuj dane, patrząc na paszport.
                 </p>
               </div>
               <div>
-                <h3 className="font-bold text-lg mb-1">2. パスポート番号の間違い</h3>
+                <h3 className="font-bold text-lg mb-1">2. Błąd w numerze paszportu</h3>
                 <p className="text-gray-800 text-sm">
-                  「0（ゼロ）」と「O（オー）」を間違えやすいので注意。
+                  Łatwo pomylić &quot;0&quot; (zero) z &quot;O&quot; (litera O) - zachowaj ostrożność.
                 </p>
               </div>
               <div>
-                <h3 className="font-bold text-lg mb-1">3. 国民ID番号の入力</h3>
+                <h3 className="font-bold text-lg mb-1">3. Numer identyfikacyjny</h3>
                 <p className="text-gray-800 text-sm">
-                  日本にはない制度なので、「該当なし」を選択してください。
+                  Jeśli Twój kraj nie stosuje krajowego numeru identyfikacyjnego, wybierz &quot;Not Applicable&quot; (Nie dotyczy). W przypadku Polski możesz podać numer PESEL.
                 </p>
               </div>
               <div>
-                <h3 className="font-bold text-lg mb-1">4. 住所の記入形式</h3>
+                <h3 className="font-bold text-lg mb-1">4. Format adresu</h3>
                 <p className="text-gray-800 text-sm">
-                  米国形式ではなく、日本の住所をローマ字で記入すればOKです。
+                  Wystarczy wpisać swój adres w Polsce zapisany alfabetem łacińskim.
                 </p>
               </div>
               <div>
-                <h3 className="font-bold text-lg mb-1">5. 適格性質問への誤回答</h3>
+                <h3 className="font-bold text-lg mb-1">5. Błędna odpowiedź na pytania kwalifikacyjne</h3>
                 <p className="text-gray-800 text-sm">
-                  よく読まずに回答すると、誤って「YES」を選んでしまうことがあります。
-                  慎重に読んでください。
+                  Nieuwaga przy czytaniu pytań może spowodować przypadkowe zaznaczenie &quot;TAK&quot;.
+                  Czytaj uważnie każde pytanie.
                 </p>
               </div>
             </div>
           </section>
 
-          {/* 次のステップ */}
+          {/* Następne kroki */}
           <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-lg p-8 text-center">
             <h2 className="font-montserrat font-bold text-2xl mb-4">
-              さらに詳しい情報
+              Więcej informacji
             </h2>
             <p className="mb-6 opacity-90">
-              費用比較やよくある質問もご確認ください
+              Sprawdź również porównanie kosztów i najczęściej zadawane pytania
             </p>
             <div className="flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-4">
-              <Link 
+              <Link
                 href="/cost-comparison"
                 className="bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition"
               >
-                費用を比較
+                Porównanie kosztów
               </Link>
-              <Link 
+              <Link
                 href="/faq"
                 className="bg-blue-700 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-800 transition border-2 border-white"
               >
