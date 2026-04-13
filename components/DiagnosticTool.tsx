@@ -23,19 +23,19 @@ export default function DiagnosticTool() {
   const getRecommendation = () => {
     if (checkedCount >= 3) {
       return {
-        result: "Zalecamy złożenie wniosku na oficjalnej stronie",
-        color: "text-blue-600",
-        bgColor: "bg-blue-50",
-        borderColor: "border-blue-500",
-        reason: "Dla osób biegłych w angielskim, które chcą samodzielnie załatwić formalności, oficjalna strona jest najbardziej opłacalnym wyborem."
+        result: "Zalecamy zlozenie wniosku na oficjalnej stronie",
+        color: "text-[#2b6cb0]",
+        bgColor: "bg-[#ebf4ff]",
+        borderColor: "border-[#2b6cb0]",
+        reason: "Dla osob bieglych w angielskim, ktore chca samodzielnie zalatwic formalnosci, oficjalna strona jest najbardziej oplacalnym wyborem."
       };
     } else {
       return {
-        result: "Zalecamy skorzystanie z usług pośrednika",
-        color: "text-orange-600",
-        bgColor: "bg-orange-50",
-        borderColor: "border-orange-500",
-        reason: "Jeśli potrzebujesz wsparcia lub nie czujesz się pewnie z angielskim, usługa pośrednika zapewni Ci spokojne przejście przez procedurę."
+        result: "Zalecamy skorzystanie z uslug posrednika",
+        color: "text-[#d69e2e]",
+        bgColor: "bg-amber-50",
+        borderColor: "border-[#d69e2e]",
+        reason: "Jesli potrzebujesz wsparcia lub nie czujesz sie pewnie z angielskim, usluga posrednika zapewni Ci spokojne przejscie przez procedure."
       };
     }
   };
@@ -43,70 +43,44 @@ export default function DiagnosticTool() {
   const recommendation = getRecommendation();
 
   return (
-    <div className="bg-gradient-to-br from-purple-600 to-purple-800 text-white rounded-lg p-8">
-      <h2 className="font-montserrat font-bold text-2xl mb-6 text-center">
-        Co wybrać? Sprawdź!
-      </h2>
+    <div className="bg-gradient-to-br from-[#0f2440] via-[#1a365d] to-[#234681] text-white rounded-xl p-8 shadow-lg">
+      <div className="text-center mb-6">
+        <h2 className="font-montserrat font-bold text-2xl mb-2">
+          Co wybrac? Sprawdz!
+        </h2>
+        <p className="text-blue-200 text-sm">Odpowiedz na pytania, aby uzyskac rekomendacje</p>
+      </div>
       <div className="bg-white text-gray-800 rounded-lg p-6 space-y-4">
         <div className="space-y-3">
-          <div className="flex items-start space-x-3">
-            <input
-              type="checkbox"
-              id="q1"
-              className="mt-1 w-4 h-4 cursor-pointer"
-              checked={checks.q1}
-              onChange={() => handleCheckChange('q1')}
-            />
-            <label htmlFor="q1" className="cursor-pointer">
-              Czuję się pewnie, wypełniając formularze po angielsku
-            </label>
-          </div>
-          <div className="flex items-start space-x-3">
-            <input
-              type="checkbox"
-              id="q2"
-              className="mt-1 w-4 h-4 cursor-pointer"
-              checked={checks.q2}
-              onChange={() => handleCheckChange('q2')}
-            />
-            <label htmlFor="q2" className="cursor-pointer">
-              Wolę samodzielnie załatwiać formalności
-            </label>
-          </div>
-          <div className="flex items-start space-x-3">
-            <input
-              type="checkbox"
-              id="q3"
-              className="mt-1 w-4 h-4 cursor-pointer"
-              checked={checks.q3}
-              onChange={() => handleCheckChange('q3')}
-            />
-            <label htmlFor="q3" className="cursor-pointer">
-              Chcę zminimalizować koszty
-            </label>
-          </div>
-          <div className="flex items-start space-x-3">
-            <input
-              type="checkbox"
-              id="q4"
-              className="mt-1 w-4 h-4 cursor-pointer"
-              checked={checks.q4}
-              onChange={() => handleCheckChange('q4')}
-            />
-            <label htmlFor="q4" className="cursor-pointer">
-              Rozumiem ryzyko błędu przy samodzielnym wypełnianiu
-            </label>
-          </div>
+          {[
+            { id: "q1" as const, label: "Czuje sie pewnie, wypelniajac formularze po angielsku" },
+            { id: "q2" as const, label: "Wole samodzielnie zalatiwac formalnosci" },
+            { id: "q3" as const, label: "Chce zminimalizowac koszty" },
+            { id: "q4" as const, label: "Rozumiem ryzyko bledu przy samodzielnym wypelnianiu" },
+          ].map((item) => (
+            <div key={item.id} className="flex items-start space-x-3 p-2 rounded-lg hover:bg-gray-50 transition">
+              <input
+                type="checkbox"
+                id={item.id}
+                className="mt-1 w-5 h-5 cursor-pointer accent-[#2b6cb0] rounded"
+                checked={checks[item.id]}
+                onChange={() => handleCheckChange(item.id)}
+              />
+              <label htmlFor={item.id} className="cursor-pointer text-gray-700">
+                {item.label}
+              </label>
+            </div>
+          ))}
         </div>
 
-        <div className={`border-t pt-4 mt-4 ${recommendation.bgColor} ${recommendation.borderColor} border-l-4 p-4 rounded`}>
-          <p className="text-sm text-gray-600 mb-2 font-medium">
+        <div className={`border-t pt-4 mt-4 ${recommendation.bgColor} ${recommendation.borderColor} border-l-4 p-4 rounded-r-lg`}>
+          <p className="text-sm text-gray-500 mb-2 font-medium">
             Wynik (zaznaczono: {checkedCount}/4)
           </p>
           <p className={`text-lg font-bold ${recommendation.color} mb-2`}>
             {recommendation.result}
           </p>
-          <p className="text-sm text-gray-700">
+          <p className="text-sm text-gray-600">
             {recommendation.reason}
           </p>
           <div className="mt-4 flex flex-col sm:flex-row gap-2">
@@ -116,32 +90,32 @@ export default function DiagnosticTool() {
                   href="https://esta.cbp.dhs.gov"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block bg-blue-600 text-white px-4 py-2 rounded text-sm font-medium hover:bg-blue-700 transition text-center"
+                  className="inline-block bg-[#1a365d] text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-[#234681] transition text-center"
                 >
-                  Złóż wniosek na oficjalnej stronie →
+                  Zloz wniosek na oficjalnej stronie
                 </a>
                 <Link
                   href="/application-guide"
-                  className="inline-block bg-white text-blue-600 border-2 border-blue-600 px-4 py-2 rounded text-sm font-medium hover:bg-blue-50 transition text-center"
+                  className="inline-block bg-white text-[#1a365d] border-2 border-[#1a365d] px-4 py-2 rounded-lg text-sm font-medium hover:bg-[#ebf4ff] transition text-center"
                 >
-                  Sprawdź procedurę
+                  Sprawdz procedure
                 </Link>
               </>
             ) : (
               <>
                 <Link
                   href="/cost-comparison"
-                  className="inline-block bg-orange-600 text-white px-4 py-2 rounded text-sm font-medium hover:bg-orange-700 transition text-center"
+                  className="inline-block bg-[#d69e2e] text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-[#b7791f] transition text-center"
                 >
-                  Porównaj usługi pośredników →
+                  Porownaj uslugi posrednikow
                 </Link>
                 <a
                   href="https://esta.cbp.dhs.gov"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block bg-white text-orange-600 border-2 border-orange-600 px-4 py-2 rounded text-sm font-medium hover:bg-orange-50 transition text-center"
+                  className="inline-block bg-white text-[#d69e2e] border-2 border-[#d69e2e] px-4 py-2 rounded-lg text-sm font-medium hover:bg-amber-50 transition text-center"
                 >
-                  Zobacz oficjalną stronę
+                  Zobacz oficjalna strone
                 </a>
               </>
             )}

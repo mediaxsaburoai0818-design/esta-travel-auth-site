@@ -5,10 +5,24 @@
 :root {
   --font-noto-sans: var(--font-noto-sans);
   --font-montserrat: var(--font-montserrat);
+
+  /* keta-travel.com inspired color palette */
+  --color-navy: #1a365d;
+  --color-navy-light: #234681;
+  --color-navy-dark: #0f2440;
+  --color-blue: #2b6cb0;
+  --color-blue-light: #3182ce;
+  --color-blue-pale: #ebf4ff;
+  --color-gold: #d69e2e;
+  --color-gold-light: #ecc94b;
+  --color-gold-dark: #b7791f;
+  --color-gray-bg: #f7fafc;
+  --color-gray-light: #edf2f7;
 }
 
 body {
   font-family: var(--font-noto-sans), sans-serif;
+  color: #2d3748;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -19,4 +33,15 @@ h1, h2, h3, h4, h5, h6 {
   .font-montserrat {
     font-family: var(--font-montserrat), sans-serif;
   }
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom selection color */
+::selection {
+  background-color: #2b6cb0;
+  color: white;
 }
