@@ -3,76 +3,154 @@
 import Link from "next/link";
 import { useState } from "react";
 
+const navLinks = [
+  {
+    label: "Informacje o ESTA",
+    href: "/esta-info/what-is-esta/",
+    children: [
+      { label: "Czym jest ESTA?", href: "/esta-info/what-is-esta/" },
+      { label: "Sposob skladania wniosku", href: "/esta-info/application/" },
+      { label: "Oplaty", href: "/esta-info/fee/" },
+      { label: "Okres waznosci", href: "/esta-info/expiration/" },
+      { label: "Sprawdzenie statusu", href: "/esta-info/status-check/" },
+    ],
+  },
+  { label: "Sposob skladania wniosku", href: "/esta-info/application/" },
+  { label: "Oplaty", href: "/esta-info/fee/" },
+  { label: "FAQ", href: "/faq/" },
+  { label: "Kontakt", href: "/site-info/contact/" },
+];
+
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   return (
-    <header className="bg-[#1a365d] sticky top-0 z-50 shadow-lg">
-      {/* Top bar */}
-      <div className="bg-[#0f2440] text-gray-300 text-xs py-1.5 hidden md:block">
-        <div className="container mx-auto px-4 flex justify-between items-center">
-          <span>Elektroniczny System Autoryzacji Podrozy do USA</span>
-          <span>Oficjalna strona ESTA: esta.cbp.dhs.gov</span>
-        </div>
-      </div>
-
-      {/* Main header */}
-      <div className="container mx-auto px-4 py-3">
+    <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
+      <div className="max-w-6xl mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-[#d69e2e] rounded-lg flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <div>
-              <div className="text-xl font-montserrat font-bold text-white tracking-wide">
-                ESTA GUIDE
-              </div>
-              <div className="text-[10px] text-gray-400 tracking-widest uppercase">
-                Przewodnik po ESTA
-              </div>
-            </div>
+          <Link href="/" className="flex items-center space-x-2">
+            <span
+              className="text-xl font-bold tracking-wide"
+              style={{
+                fontFamily: "var(--font-noto-serif), serif",
+                color: "#1a365d",
+              }}
+            >
+              ESTA Online
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-1">
-            <Link href="/" className="text-gray-200 hover:text-white hover:bg-[#234681] px-4 py-2 rounded-md font-medium transition text-sm">
-              Strona glowna
-            </Link>
-            <Link href="/application-guide" className="text-gray-200 hover:text-white hover:bg-[#234681] px-4 py-2 rounded-md font-medium transition text-sm">
-              Procedura
-            </Link>
-            <Link href="/cost-comparison" className="text-gray-200 hover:text-white hover:bg-[#234681] px-4 py-2 rounded-md font-medium transition text-sm">
-              Koszty
-            </Link>
-            <Link href="/faq" className="text-gray-200 hover:text-white hover:bg-[#234681] px-4 py-2 rounded-md font-medium transition text-sm">
+          <nav className="hidden lg:flex items-center space-x-1">
+            {/* Dropdown: ESTA Info */}
+            <div
+              className="relative"
+              onMouseEnter={() => setDropdownOpen(true)}
+              onMouseLeave={() => setDropdownOpen(false)}
+            >
+              <button className="text-gray-700 hover:text-[#1a365d] px-3 py-2 text-sm font-medium transition">
+                Informacje o ESTA
+              </button>
+              {dropdownOpen && (
+                <div className="absolute top-full left-0 bg-white border border-gray-200 shadow-lg rounded-md py-2 min-w-[220px]">
+                  {navLinks[0].children!.map((child) => (
+                    <Link
+                      key={child.href}
+                      href={child.href}
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#1a365d]"
+                    >
+                      {child.label}
+                    </Link>
+                  ))}
+                  <Link
+                    href="/esta-info/place-of-birth/"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#1a365d]"
+                  >
+                    Miejsce urodzenia / adres
+                  </Link>
+                  <Link
+                    href="/esta-info/us-contact/"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#1a365d]"
+                  >
+                    Dane kontaktowe w USA
+                  </Link>
+                  <Link
+                    href="/esta-info/official-cbp/"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#1a365d]"
+                  >
+                    Oficjalna strona CBP
+                  </Link>
+                  <Link
+                    href="/esta-info/mobile-app/"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#1a365d]"
+                  >
+                    Aplikacja mobilna
+                  </Link>
+                  <Link
+                    href="/esta-info/guam/"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#1a365d]"
+                  >
+                    Wjazd na Guam
+                  </Link>
+                </div>
+              )}
+            </div>
+
+            <Link
+              href="/faq/"
+              className="text-gray-700 hover:text-[#1a365d] px-3 py-2 text-sm font-medium transition"
+            >
               FAQ
             </Link>
-            <a
-              href="https://esta.cbp.dhs.gov"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="ml-2 bg-[#d69e2e] hover:bg-[#b7791f] text-white px-5 py-2 rounded-md font-bold text-sm transition shadow-md"
+            <Link
+              href="/site-info/contact/"
+              className="text-gray-700 hover:text-[#1a365d] px-3 py-2 text-sm font-medium transition"
             >
-              Zloz wniosek
-            </a>
+              Kontakt
+            </Link>
+            <Link
+              href="/apply/"
+              className="ml-3 bg-[#c41e3a] hover:bg-[#a01830] text-white px-5 py-2 rounded text-sm font-bold transition"
+            >
+              Zloz wniosek ESTA
+            </Link>
           </nav>
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden text-white p-2"
+            className="lg:hidden text-gray-700 p-2"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Menu"
           >
             {mobileMenuOpen ? (
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+              <svg
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
               </svg>
             ) : (
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+              <svg
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
               </svg>
             )}
           </button>
@@ -80,27 +158,103 @@ export default function Header() {
 
         {/* Mobile menu */}
         {mobileMenuOpen && (
-          <nav className="md:hidden mt-3 pb-3 border-t border-[#234681] pt-3 space-y-1">
-            <Link href="/" className="block text-gray-200 hover:text-white hover:bg-[#234681] px-4 py-2.5 rounded-md font-medium transition" onClick={() => setMobileMenuOpen(false)}>
-              Strona glowna
-            </Link>
-            <Link href="/application-guide" className="block text-gray-200 hover:text-white hover:bg-[#234681] px-4 py-2.5 rounded-md font-medium transition" onClick={() => setMobileMenuOpen(false)}>
-              Procedura
-            </Link>
-            <Link href="/cost-comparison" className="block text-gray-200 hover:text-white hover:bg-[#234681] px-4 py-2.5 rounded-md font-medium transition" onClick={() => setMobileMenuOpen(false)}>
-              Koszty
-            </Link>
-            <Link href="/faq" className="block text-gray-200 hover:text-white hover:bg-[#234681] px-4 py-2.5 rounded-md font-medium transition" onClick={() => setMobileMenuOpen(false)}>
-              FAQ
-            </Link>
-            <a
-              href="https://esta.cbp.dhs.gov"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block bg-[#d69e2e] hover:bg-[#b7791f] text-white px-4 py-2.5 rounded-md font-bold transition text-center mt-2"
+          <nav className="lg:hidden mt-3 pb-3 border-t border-gray-200 pt-3 space-y-1">
+            <p className="px-3 py-1 text-xs text-gray-400 uppercase tracking-wider font-bold">
+              Informacje o ESTA
+            </p>
+            <Link
+              href="/esta-info/what-is-esta/"
+              className="block text-gray-700 hover:text-[#1a365d] hover:bg-gray-50 px-4 py-2 text-sm"
+              onClick={() => setMobileMenuOpen(false)}
             >
-              Zloz wniosek
-            </a>
+              Czym jest ESTA?
+            </Link>
+            <Link
+              href="/esta-info/application/"
+              className="block text-gray-700 hover:text-[#1a365d] hover:bg-gray-50 px-4 py-2 text-sm"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Sposob skladania wniosku
+            </Link>
+            <Link
+              href="/esta-info/fee/"
+              className="block text-gray-700 hover:text-[#1a365d] hover:bg-gray-50 px-4 py-2 text-sm"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Oplaty
+            </Link>
+            <Link
+              href="/esta-info/expiration/"
+              className="block text-gray-700 hover:text-[#1a365d] hover:bg-gray-50 px-4 py-2 text-sm"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Okres waznosci
+            </Link>
+            <Link
+              href="/esta-info/status-check/"
+              className="block text-gray-700 hover:text-[#1a365d] hover:bg-gray-50 px-4 py-2 text-sm"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Sprawdzenie statusu
+            </Link>
+            <Link
+              href="/esta-info/place-of-birth/"
+              className="block text-gray-700 hover:text-[#1a365d] hover:bg-gray-50 px-4 py-2 text-sm"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Miejsce urodzenia / adres
+            </Link>
+            <Link
+              href="/esta-info/us-contact/"
+              className="block text-gray-700 hover:text-[#1a365d] hover:bg-gray-50 px-4 py-2 text-sm"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Dane kontaktowe w USA
+            </Link>
+            <Link
+              href="/esta-info/official-cbp/"
+              className="block text-gray-700 hover:text-[#1a365d] hover:bg-gray-50 px-4 py-2 text-sm"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Oficjalna strona CBP
+            </Link>
+            <Link
+              href="/esta-info/mobile-app/"
+              className="block text-gray-700 hover:text-[#1a365d] hover:bg-gray-50 px-4 py-2 text-sm"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Aplikacja mobilna
+            </Link>
+            <Link
+              href="/esta-info/guam/"
+              className="block text-gray-700 hover:text-[#1a365d] hover:bg-gray-50 px-4 py-2 text-sm"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Wjazd na Guam
+            </Link>
+            <div className="border-t border-gray-200 mt-2 pt-2">
+              <Link
+                href="/faq/"
+                className="block text-gray-700 hover:text-[#1a365d] hover:bg-gray-50 px-4 py-2 text-sm"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                FAQ
+              </Link>
+              <Link
+                href="/site-info/contact/"
+                className="block text-gray-700 hover:text-[#1a365d] hover:bg-gray-50 px-4 py-2 text-sm"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Kontakt
+              </Link>
+            </div>
+            <Link
+              href="/apply/"
+              className="block bg-[#c41e3a] hover:bg-[#a01830] text-white px-4 py-2.5 rounded text-sm font-bold text-center mt-2"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Zloz wniosek ESTA
+            </Link>
           </nav>
         )}
       </div>
