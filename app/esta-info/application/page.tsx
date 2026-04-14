@@ -39,8 +39,7 @@ export default function Application() {
 
       <div className="space-y-8 text-gray-600 leading-relaxed">
         <h2
-          className="text-2xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           Przed rozpoczeciem &mdash; co przygotowac
         </h2>
@@ -55,8 +54,7 @@ export default function Application() {
         </ul>
 
         <h2
-          className="text-2xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           Krok 1: Wejdz na oficjalna strone
         </h2>
@@ -75,8 +73,7 @@ export default function Application() {
         </p>
 
         <h2
-          className="text-2xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           Krok 2: Wprowadz dane z paszportu
         </h2>
@@ -92,8 +89,7 @@ export default function Application() {
         </div>
 
         <h2
-          className="text-2xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           Krok 3: Wprowadz dane osobowe
         </h2>
@@ -104,8 +100,7 @@ export default function Application() {
         </p>
 
         <h2
-          className="text-2xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           Krok 4: Wprowadz dane o zatrudnieniu
         </h2>
@@ -116,8 +111,7 @@ export default function Application() {
         </p>
 
         <h2
-          className="text-2xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           Krok 5: Wprowadz dane o podrozy
         </h2>
@@ -128,8 +122,7 @@ export default function Application() {
         </p>
 
         <h2
-          className="text-2xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           Krok 6: Odpowiedz na pytania kwalifikacyjne
         </h2>
@@ -142,8 +135,7 @@ export default function Application() {
         </p>
 
         <h2
-          className="text-2xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           Krok 7: Sprawdz i wyslij
         </h2>
@@ -153,8 +145,7 @@ export default function Application() {
         </p>
 
         <h2
-          className="text-2xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           Po zlozeniu wniosku
         </h2>
@@ -189,7 +180,7 @@ export default function Application() {
         </Link>
         <Link
           href="/apply/"
-          className="bg-[#c41e3a] hover:bg-[#a01830] text-white px-6 py-3 rounded font-bold text-sm transition text-center"
+          className="bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold py-3 px-8 rounded text-sm transition text-center"
         >
           Zloz wniosek ESTA
         </Link>

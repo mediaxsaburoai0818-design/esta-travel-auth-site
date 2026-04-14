@@ -42,8 +42,7 @@ export default function WhatIsEsta() {
         </p>
 
         <h2
-          className="text-2xl font-bold text-[#1a365d] pt-4"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           Cel systemu ESTA
         </h2>
@@ -55,8 +54,7 @@ export default function WhatIsEsta() {
         </p>
 
         <h2
-          className="text-2xl font-bold text-[#1a365d] pt-4"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           Kto moze ubiegac sie o ESTA?
         </h2>
@@ -68,8 +66,7 @@ export default function WhatIsEsta() {
         </p>
 
         <h2
-          className="text-2xl font-bold text-[#1a365d] pt-4"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           Kraje uprawnione do ESTA (wybrane)
         </h2>
@@ -107,8 +104,7 @@ export default function WhatIsEsta() {
         </div>
 
         <h2
-          className="text-2xl font-bold text-[#1a365d] pt-4"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           Warunki korzystania z ESTA
         </h2>
@@ -121,8 +117,7 @@ export default function WhatIsEsta() {
         </ul>
 
         <h2
-          className="text-2xl font-bold text-[#1a365d] pt-4"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           ESTA a wiza &mdash; roznice
         </h2>
@@ -197,7 +192,7 @@ export default function WhatIsEsta() {
         </Link>
         <Link
           href="/apply/"
-          className="bg-[#c41e3a] hover:bg-[#a01830] text-white px-6 py-3 rounded font-bold text-sm transition text-center"
+          className="bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold py-3 px-8 rounded text-sm transition text-center"
         >
           Zloz wniosek ESTA
         </Link>

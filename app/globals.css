@@ -44,3 +44,17 @@ html {
 .content-link:hover {
   color: var(--color-navy-light);
 }
+
+/* Heading band for section H2s on content pages */
+.heading-band {
+  background-color: #1a365d;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+@media (min-width: 768px) {
+  .heading-band {
+    font-size: 1.5rem;
+  }
+}

@@ -30,8 +30,7 @@ export default function PrivacyPolicy() {
 
       <div className="space-y-6 text-gray-600 leading-relaxed text-sm">
         <h2
-          className="text-xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           1. Informacje ogolne
         </h2>
@@ -42,8 +41,7 @@ export default function PrivacyPolicy() {
         </p>
 
         <h2
-          className="text-xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           2. Zbierane dane
         </h2>
@@ -56,8 +54,7 @@ export default function PrivacyPolicy() {
         </ul>
 
         <h2
-          className="text-xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           3. Cel przetwarzania danych
         </h2>
@@ -70,8 +67,7 @@ export default function PrivacyPolicy() {
         </ul>
 
         <h2
-          className="text-xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           4. Pliki cookies
         </h2>
@@ -82,8 +78,7 @@ export default function PrivacyPolicy() {
         </p>
 
         <h2
-          className="text-xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           5. Udostepnianie danych
         </h2>
@@ -94,8 +89,7 @@ export default function PrivacyPolicy() {
         </p>
 
         <h2
-          className="text-xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           6. Prawa uzytkownika
         </h2>
@@ -110,8 +104,7 @@ export default function PrivacyPolicy() {
         </ul>
 
         <h2
-          className="text-xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           7. Bezpieczenstwo danych
         </h2>
@@ -122,8 +115,7 @@ export default function PrivacyPolicy() {
         </p>
 
         <h2
-          className="text-xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           8. Kontakt
         </h2>

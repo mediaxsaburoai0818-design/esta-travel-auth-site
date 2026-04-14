@@ -30,8 +30,7 @@ export default function ContentsPolicy() {
 
       <div className="space-y-6 text-gray-600 leading-relaxed text-sm">
         <h2
-          className="text-xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           1. Zasady tworzenia tresci
         </h2>
@@ -43,8 +42,7 @@ export default function ContentsPolicy() {
         </p>
 
         <h2
-          className="text-xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           2. Zrodla informacji
         </h2>
@@ -58,8 +56,7 @@ export default function ContentsPolicy() {
         </ul>
 
         <h2
-          className="text-xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           3. Aktualnosc tresci
         </h2>
@@ -72,8 +69,7 @@ export default function ContentsPolicy() {
         </p>
 
         <h2
-          className="text-xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           4. Ograniczenia
         </h2>
@@ -85,8 +81,7 @@ export default function ContentsPolicy() {
         </p>
 
         <h2
-          className="text-xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           5. Zglaszanie bledow
         </h2>

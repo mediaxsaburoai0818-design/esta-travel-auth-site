@@ -4,40 +4,39 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-[#1a365d] text-white">
+      <section className="relative text-white min-h-[420px] md:min-h-[520px] flex items-center">
         <div
-          className="absolute inset-0 opacity-20"
+          className="absolute inset-0"
           style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1485738422979-f5c462d49f04?w=1600&q=80')",
+            backgroundImage: "url('/images/hero-capitol.png')",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         />
-        <div className="relative max-w-6xl mx-auto px-4 py-20 md:py-28">
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="relative max-w-6xl mx-auto px-4 py-20 md:py-28 w-full">
           <div className="max-w-3xl">
             <h1
-              className="text-3xl md:text-5xl font-bold mb-6 leading-tight"
+              className="text-3xl md:text-5xl font-bold mb-6 leading-tight text-white drop-shadow-lg"
               style={{
                 fontFamily: "var(--font-noto-serif), serif",
-                color: "white",
               }}
             >
               Elektroniczna Autoryzacja
               <br />
               Podrozy do USA
             </h1>
-            <p className="text-lg md:text-xl mb-4 text-gray-200 leading-relaxed">
+            <p className="text-lg md:text-xl mb-4 text-gray-100 leading-relaxed drop-shadow">
               Kompletny przewodnik po systemie ESTA &mdash; wszystko, co musisz
               wiedziec o autoryzacji podrozy do Stanow Zjednoczonych.
             </p>
-            <p className="text-sm mb-8 text-gray-300">
+            <p className="text-sm mb-8 text-gray-200 drop-shadow">
               Program Ruchu Bezwizowego (VWP) | Polska jest krajem uprawnionym
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link
                 href="/apply/"
-                className="bg-[#c41e3a] hover:bg-[#a01830] text-white px-7 py-3 rounded font-bold text-base transition text-center"
+                className="bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold py-3 px-8 rounded text-base transition text-center shadow-lg"
               >
                 Zloz wniosek ESTA
               </Link>
@@ -81,10 +80,7 @@ export default function Home() {
       {/* ESTA overview */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4">
-          <h2
-            className="text-2xl md:text-3xl font-bold text-[#1a365d] mb-6"
-            style={{ fontFamily: "var(--font-noto-serif), serif" }}
-          >
+          <h2 className="bg-[#1a365d] text-white py-3 px-6 text-xl md:text-2xl font-bold mb-6">
             Czym jest ESTA?
           </h2>
           <p className="text-gray-600 mb-4 leading-relaxed">
@@ -111,10 +107,7 @@ export default function Home() {
       {/* Application steps */}
       <section className="py-16 bg-[#f8f9fa]">
         <div className="max-w-3xl mx-auto px-4">
-          <h2
-            className="text-2xl md:text-3xl font-bold text-[#1a365d] mb-8"
-            style={{ fontFamily: "var(--font-noto-serif), serif" }}
-          >
+          <h2 className="bg-[#1a365d] text-white py-3 px-6 text-xl md:text-2xl font-bold mb-8">
             Jak zlozyc wniosek ESTA?
           </h2>
 
@@ -194,10 +187,7 @@ export default function Home() {
       {/* FAQ preview */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4">
-          <h2
-            className="text-2xl md:text-3xl font-bold text-[#1a365d] mb-8"
-            style={{ fontFamily: "var(--font-noto-serif), serif" }}
-          >
+          <h2 className="bg-[#1a365d] text-white py-3 px-6 text-xl md:text-2xl font-bold mb-8">
             Najczesciej zadawane pytania
           </h2>
 
@@ -251,10 +241,7 @@ export default function Home() {
       {/* Related pages */}
       <section className="py-16 bg-[#f8f9fa]">
         <div className="max-w-3xl mx-auto px-4">
-          <h2
-            className="text-2xl md:text-3xl font-bold text-[#1a365d] mb-8"
-            style={{ fontFamily: "var(--font-noto-serif), serif" }}
-          >
+          <h2 className="bg-[#1a365d] text-white py-3 px-6 text-xl md:text-2xl font-bold mb-8">
             Przydatne strony
           </h2>
 
@@ -324,7 +311,7 @@ export default function Home() {
           </p>
           <Link
             href="/apply/"
-            className="inline-block bg-[#c41e3a] hover:bg-[#a01830] text-white px-8 py-3 rounded font-bold transition"
+            className="inline-block bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold py-3 px-8 rounded transition"
           >
             Zloz wniosek ESTA
           </Link>

@@ -32,8 +32,7 @@ export default function StatusCheck() {
 
       <div className="space-y-6 text-gray-600 leading-relaxed">
         <h2
-          className="text-2xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           Jak sprawdzic status?
         </h2>
@@ -61,8 +60,7 @@ export default function StatusCheck() {
         </ol>
 
         <h2
-          className="text-2xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           Mozliwe statusy wniosku
         </h2>
@@ -101,8 +99,7 @@ export default function StatusCheck() {
         </div>
 
         <h2
-          className="text-2xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           Co robic, jesli status to &quot;Pending&quot;?
         </h2>
@@ -135,7 +132,7 @@ export default function StatusCheck() {
         </Link>
         <Link
           href="/apply/"
-          className="bg-[#c41e3a] hover:bg-[#a01830] text-white px-6 py-3 rounded font-bold text-sm transition text-center"
+          className="bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold py-3 px-8 rounded text-sm transition text-center"
         >
           Zloz wniosek ESTA
         </Link>

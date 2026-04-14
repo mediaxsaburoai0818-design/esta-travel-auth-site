@@ -30,8 +30,7 @@ export default function Agreement() {
 
       <div className="space-y-6 text-gray-600 leading-relaxed text-sm">
         <h2
-          className="text-xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           1. Postanowienia ogolne
         </h2>
@@ -41,8 +40,7 @@ export default function Agreement() {
         </p>
 
         <h2
-          className="text-xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           2. Charakter serwisu
         </h2>
@@ -54,8 +52,7 @@ export default function Agreement() {
         </p>
 
         <h2
-          className="text-xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           3. Uslugi
         </h2>
@@ -68,8 +65,7 @@ export default function Agreement() {
         </ul>
 
         <h2
-          className="text-xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           4. Odpowiedzialnosc
         </h2>
@@ -82,8 +78,7 @@ export default function Agreement() {
         </p>
 
         <h2
-          className="text-xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           5. Prawa autorskie
         </h2>
@@ -94,8 +89,7 @@ export default function Agreement() {
         </p>
 
         <h2
-          className="text-xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           6. Linki zewnetrzne
         </h2>
@@ -105,8 +99,7 @@ export default function Agreement() {
         </p>
 
         <h2
-          className="text-xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           7. Zmiany regulaminu
         </h2>
@@ -116,8 +109,7 @@ export default function Agreement() {
         </p>
 
         <h2
-          className="text-xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           8. Kontakt
         </h2>

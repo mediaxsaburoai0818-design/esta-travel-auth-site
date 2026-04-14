@@ -32,8 +32,7 @@ export default function USContact() {
 
       <div className="space-y-6 text-gray-600 leading-relaxed">
         <h2
-          className="text-2xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           Osoba kontaktowa w USA (U.S. Point of Contact)
         </h2>
@@ -49,8 +48,7 @@ export default function USContact() {
         </ul>
 
         <h2
-          className="text-2xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           Jak wpisac dane hotelu?
         </h2>
@@ -67,8 +65,7 @@ export default function USContact() {
         </div>
 
         <h2
-          className="text-2xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           Jesli nie masz jeszcze rezerwacji
         </h2>
@@ -80,8 +77,7 @@ export default function USContact() {
         </p>
 
         <h2
-          className="text-2xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           Adres pobytu w USA (Address While in the U.S.)
         </h2>
@@ -92,8 +88,7 @@ export default function USContact() {
         </p>
 
         <h2
-          className="text-2xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           Kontakt alarmowy (Emergency Contact)
         </h2>
@@ -118,7 +113,7 @@ export default function USContact() {
         </Link>
         <Link
           href="/apply/"
-          className="bg-[#c41e3a] hover:bg-[#a01830] text-white px-6 py-3 rounded font-bold text-sm transition text-center"
+          className="bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold py-3 px-8 rounded text-sm transition text-center"
         >
           Zloz wniosek ESTA
         </Link>

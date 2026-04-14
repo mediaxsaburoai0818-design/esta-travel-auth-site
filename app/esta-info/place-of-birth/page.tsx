@@ -32,8 +32,7 @@ export default function PlaceOfBirth() {
 
       <div className="space-y-6 text-gray-600 leading-relaxed">
         <h2
-          className="text-2xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           Miejsce urodzenia (City of Birth)
         </h2>
@@ -55,8 +54,7 @@ export default function PlaceOfBirth() {
         </div>
 
         <h2
-          className="text-2xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           Kraj urodzenia (Country of Birth)
         </h2>
@@ -66,8 +64,7 @@ export default function PlaceOfBirth() {
         </p>
 
         <h2
-          className="text-2xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           Adres zamieszkania (Home Address)
         </h2>
@@ -96,8 +93,7 @@ export default function PlaceOfBirth() {
         </div>
 
         <h2
-          className="text-2xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           Najczestsze bledy
         </h2>
@@ -124,7 +120,7 @@ export default function PlaceOfBirth() {
         </Link>
         <Link
           href="/apply/"
-          className="bg-[#c41e3a] hover:bg-[#a01830] text-white px-6 py-3 rounded font-bold text-sm transition text-center"
+          className="bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold py-3 px-8 rounded text-sm transition text-center"
         >
           Zloz wniosek ESTA
         </Link>

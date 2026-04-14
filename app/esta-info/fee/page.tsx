@@ -33,8 +33,7 @@ export default function Fee() {
 
       <div className="space-y-6 text-gray-600 leading-relaxed">
         <h2
-          className="text-2xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           Struktura oplaty $21
         </h2>
@@ -90,8 +89,7 @@ export default function Fee() {
         </div>
 
         <h2
-          className="text-2xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           Akceptowane metody platnosci
         </h2>
@@ -105,8 +103,7 @@ export default function Fee() {
         </ul>
 
         <h2
-          className="text-2xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           Kiedy dokonywana jest platnosc?
         </h2>
@@ -117,8 +114,7 @@ export default function Fee() {
         </p>
 
         <h2
-          className="text-2xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           Porownanie kosztow: oficjalna strona vs posrednicy
         </h2>
@@ -181,7 +177,7 @@ export default function Fee() {
         </Link>
         <Link
           href="/apply/"
-          className="bg-[#c41e3a] hover:bg-[#a01830] text-white px-6 py-3 rounded font-bold text-sm transition text-center"
+          className="bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold py-3 px-8 rounded text-sm transition text-center"
         >
           Zloz wniosek ESTA
         </Link>

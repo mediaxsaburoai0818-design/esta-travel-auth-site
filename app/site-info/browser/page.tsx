@@ -31,8 +31,7 @@ export default function Browser() {
 
       <div className="space-y-6 text-gray-600 leading-relaxed">
         <h2
-          className="text-2xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           Zalecane przegladarki
         </h2>
@@ -74,8 +73,7 @@ export default function Browser() {
         </div>
 
         <h2
-          className="text-2xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           Wymagania techniczne
         </h2>
@@ -87,8 +85,7 @@ export default function Browser() {
         </ul>
 
         <h2
-          className="text-2xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           Przegladarki niewspierane
         </h2>

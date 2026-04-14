@@ -112,7 +112,7 @@ export default function Header() {
             </Link>
             <Link
               href="/apply/"
-              className="ml-3 bg-[#c41e3a] hover:bg-[#a01830] text-white px-5 py-2 rounded text-sm font-bold transition"
+              className="ml-3 bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold py-3 px-8 rounded text-sm transition"
             >
               Zloz wniosek ESTA
             </Link>
@@ -250,7 +250,7 @@ export default function Header() {
             </div>
             <Link
               href="/apply/"
-              className="block bg-[#c41e3a] hover:bg-[#a01830] text-white px-4 py-2.5 rounded text-sm font-bold text-center mt-2"
+              className="block bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold py-3 px-8 rounded text-sm text-center mt-2"
               onClick={() => setMobileMenuOpen(false)}
             >
               Zloz wniosek ESTA

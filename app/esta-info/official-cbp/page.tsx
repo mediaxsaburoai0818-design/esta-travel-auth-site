@@ -32,8 +32,7 @@ export default function OfficialCBP() {
 
       <div className="space-y-6 text-gray-600 leading-relaxed">
         <h2
-          className="text-2xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           Oficjalny adres strony
         </h2>
@@ -53,8 +52,7 @@ export default function OfficialCBP() {
         </div>
 
         <h2
-          className="text-2xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           Jak rozpoznac oficjalna strone?
         </h2>
@@ -71,8 +69,7 @@ export default function OfficialCBP() {
         </ul>
 
         <h2
-          className="text-2xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           Jak rozpoznac falszywa strone?
         </h2>
@@ -90,8 +87,7 @@ export default function OfficialCBP() {
         </div>
 
         <h2
-          className="text-2xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           Co mozna zrobic na oficjalnej stronie CBP?
         </h2>
@@ -103,8 +99,7 @@ export default function OfficialCBP() {
         </ul>
 
         <h2
-          className="text-2xl font-bold text-[#1a365d]"
-          style={{ fontFamily: "var(--font-noto-serif), serif" }}
+          className="heading-band"
         >
           Inne przydatne strony rzadowe
         </h2>
@@ -154,7 +149,7 @@ export default function OfficialCBP() {
         </Link>
         <Link
           href="/apply/"
-          className="bg-[#c41e3a] hover:bg-[#a01830] text-white px-6 py-3 rounded font-bold text-sm transition text-center"
+          className="bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold py-3 px-8 rounded text-sm transition text-center"
         >
           Zloz wniosek ESTA
         </Link>

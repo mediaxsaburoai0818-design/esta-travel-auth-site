@@ -38,7 +38,7 @@ export default function Confirm() {
       <div className="flex flex-col sm:flex-row gap-3">
         <Link
           href="/apply/"
-          className="bg-[#c41e3a] hover:bg-[#a01830] text-white px-6 py-3 rounded font-bold text-sm transition text-center"
+          className="bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold py-3 px-8 rounded text-sm transition text-center"
         >
           Przejdz do formularza wniosku
         </Link>
