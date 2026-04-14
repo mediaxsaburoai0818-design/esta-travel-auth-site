@@ -4,20 +4,18 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative text-white min-h-[420px] md:min-h-[520px] flex items-center">
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: "url('/images/hero-capitol.png')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
+      <section className="relative text-white min-h-[400px] md:min-h-[520px] flex items-center overflow-hidden">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/hero-capitol.png"
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/50" />
-        <div className="relative max-w-6xl mx-auto px-4 py-20 md:py-28 w-full">
+        <div className="relative max-w-6xl mx-auto px-4 py-16 md:py-28 w-full">
           <div className="max-w-3xl">
             <h1
-              className="text-3xl md:text-5xl font-bold mb-6 leading-tight text-white drop-shadow-lg"
+              className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 md:mb-6 leading-tight text-white drop-shadow-lg"
               style={{
                 fontFamily: "var(--font-noto-serif), serif",
               }}
@@ -26,23 +24,23 @@ export default function Home() {
               <br />
               Podrozy do USA
             </h1>
-            <p className="text-lg md:text-xl mb-4 text-gray-100 leading-relaxed drop-shadow">
+            <p className="text-base md:text-xl mb-3 md:mb-4 text-gray-100 leading-relaxed drop-shadow">
               Kompletny przewodnik po systemie ESTA &mdash; wszystko, co musisz
               wiedziec o autoryzacji podrozy do Stanow Zjednoczonych.
             </p>
-            <p className="text-sm mb-8 text-gray-200 drop-shadow">
+            <p className="text-xs md:text-sm mb-6 md:mb-8 text-gray-200 drop-shadow">
               Program Ruchu Bezwizowego (VWP) | Polska jest krajem uprawnionym
             </p>
-            <div className="flex flex-col sm:flex-row gap-3">
+            <div className="flex flex-col sm:flex-row gap-3 sm:items-center">
               <Link
                 href="/apply/"
-                className="bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold py-3 px-8 rounded text-base transition text-center shadow-lg"
+                className="bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold py-3 px-8 rounded text-base transition text-center shadow-lg inline-block w-auto self-start"
               >
                 Zloz wniosek ESTA
               </Link>
               <Link
                 href="/esta-info/what-is-esta/"
-                className="bg-white/10 hover:bg-white/20 text-white px-7 py-3 rounded font-bold text-base transition border border-white/30 text-center"
+                className="bg-white/10 hover:bg-white/20 text-white px-7 py-3 rounded font-bold text-base transition border border-white/30 text-center inline-block w-auto self-start"
               >
                 Dowiedz sie wiecej
               </Link>
@@ -80,7 +78,7 @@ export default function Home() {
       {/* ESTA overview */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4">
-          <h2 className="bg-[#1a365d] text-white py-3 px-6 text-xl md:text-2xl font-bold mb-6">
+          <h2 className="bg-[#1a365d] text-white py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6">
             Czym jest ESTA?
           </h2>
           <p className="text-gray-600 mb-4 leading-relaxed">
@@ -107,7 +105,7 @@ export default function Home() {
       {/* Application steps */}
       <section className="py-16 bg-[#f8f9fa]">
         <div className="max-w-3xl mx-auto px-4">
-          <h2 className="bg-[#1a365d] text-white py-3 px-6 text-xl md:text-2xl font-bold mb-8">
+          <h2 className="bg-[#1a365d] text-white py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-8">
             Jak zlozyc wniosek ESTA?
           </h2>
 
@@ -187,7 +185,7 @@ export default function Home() {
       {/* FAQ preview */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4">
-          <h2 className="bg-[#1a365d] text-white py-3 px-6 text-xl md:text-2xl font-bold mb-8">
+          <h2 className="bg-[#1a365d] text-white py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-8">
             Najczesciej zadawane pytania
           </h2>
 
@@ -241,7 +239,7 @@ export default function Home() {
       {/* Related pages */}
       <section className="py-16 bg-[#f8f9fa]">
         <div className="max-w-3xl mx-auto px-4">
-          <h2 className="bg-[#1a365d] text-white py-3 px-6 text-xl md:text-2xl font-bold mb-8">
+          <h2 className="bg-[#1a365d] text-white py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-8">
             Przydatne strony
           </h2>
 
