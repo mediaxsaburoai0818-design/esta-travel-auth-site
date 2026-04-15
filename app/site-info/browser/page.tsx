@@ -17,7 +17,7 @@ export default function Browser() {
       />
 
       <h1
-        className="text-3xl md:text-4xl font-bold text-[#1a365d] mb-6"
+        className="text-3xl md:text-4xl font-bold text-[#022444] mb-6"
         style={{ fontFamily: "var(--font-noto-serif), serif" }}
       >
         Zalecane przegladarki
@@ -63,7 +63,7 @@ export default function Browser() {
               key={browser.name}
               className="border border-gray-200 rounded p-4"
             >
-              <h3 className="font-bold text-[#1a365d] mb-1">
+              <h3 className="font-bold text-[#022444] mb-1">
                 {browser.name}
               </h3>
               <p className="text-xs text-gray-400 mb-2">{browser.version}</p>
@@ -98,7 +98,7 @@ export default function Browser() {
           <li>Starsze wersje przegladarek (sprzed 2022 roku)</li>
         </ul>
 
-        <div className="bg-[#f8f9fa] border-l-4 border-[#1a365d] p-4 rounded-r text-sm">
+        <div className="bg-[#F5F5F5] border-l-4 border-[#022444] p-4 rounded-r text-sm">
           <strong>Wskazowka:</strong> Przed zlozeniem wniosku ESTA na oficjalnej
           stronie CBP upewnij sie, ze uzywasz aktualnej wersji przegladarki i
           masz wlaczony JavaScript oraz cookies.

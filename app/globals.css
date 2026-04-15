@@ -3,12 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --color-navy: #1a365d;
-  --color-navy-light: #2a4a7f;
-  --color-navy-dark: #0f2440;
-  --color-red: #c41e3a;
-  --color-red-dark: #a01830;
-  --color-gray-bg: #f8f9fa;
+  --color-navy: #022444;
+  --color-navy-light: #0a3a6b;
+  --color-navy-dark: #011a33;
+  --color-red: #8d1812;
+  --color-red-dark: #6d120e;
+  --color-red-light: #a52a24;
+  --color-gray-bg: #F5F5F5;
   --color-gray-light: #f0f0f0;
   --color-gray-border: #e0e0e0;
   --color-text: #333333;
@@ -47,7 +48,7 @@ html {
 
 /* Heading band for section H2s on content pages */
 .heading-band {
-  background-color: #1a365d;
+  background-color: #022444;
   color: white;
   padding: 1rem 1.5rem;
   font-weight: bold;

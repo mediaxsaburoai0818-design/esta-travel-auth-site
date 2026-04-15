@@ -77,7 +77,7 @@ export default function FAQ() {
       <Breadcrumb items={[{ label: "FAQ" }]} />
 
       <h1
-        className="text-3xl md:text-4xl font-bold text-[#1a365d] mb-4"
+        className="text-3xl md:text-4xl font-bold text-[#022444] mb-4"
         style={{ fontFamily: "var(--font-noto-serif), serif" }}
       >
         Najczesciej zadawane pytania (FAQ)
@@ -90,7 +90,7 @@ export default function FAQ() {
       <div className="space-y-6">
         {faqs.map((faq, i) => (
           <div key={i} className="border-b border-gray-200 pb-5">
-            <h2 className="font-bold text-[#1a365d] mb-2 text-base">
+            <h2 className="font-bold text-[#022444] mb-2 text-base">
               {faq.q}
             </h2>
             <p className="text-gray-600 text-sm leading-relaxed">{faq.a}</p>
@@ -98,8 +98,8 @@ export default function FAQ() {
         ))}
       </div>
 
-      <div className="mt-10 bg-[#f8f9fa] border border-gray-200 rounded p-6">
-        <h2 className="font-bold text-[#1a365d] mb-2">
+      <div className="mt-10 bg-[#F5F5F5] border border-gray-200 rounded p-6">
+        <h2 className="font-bold text-[#022444] mb-2">
           Nie znalazles odpowiedzi?
         </h2>
         <p className="text-gray-600 text-sm mb-4">
@@ -107,7 +107,7 @@ export default function FAQ() {
         </p>
         <Link
           href="/site-info/contact/"
-          className="inline-block bg-[#1a365d] hover:bg-[#2a4a7f] text-white px-5 py-2 rounded font-bold text-sm transition"
+          className="inline-block bg-[#022444] hover:bg-[#0a3a6b] text-white px-5 py-2 rounded font-bold text-sm transition"
         >
           Skontaktuj sie z nami
         </Link>

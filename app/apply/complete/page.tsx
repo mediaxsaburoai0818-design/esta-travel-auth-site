@@ -26,7 +26,7 @@ export default function Complete() {
       </div>
 
       <h1
-        className="text-3xl md:text-4xl font-bold text-[#1a365d] mb-4"
+        className="text-3xl md:text-4xl font-bold text-[#022444] mb-4"
         style={{ fontFamily: "var(--font-noto-serif), serif" }}
       >
         Wniosek zostal wyslany
@@ -37,12 +37,12 @@ export default function Complete() {
         rozpatrzenia.
       </p>
 
-      <div className="bg-[#f8f9fa] border border-gray-200 rounded p-6 my-8 text-left">
-        <h2 className="font-bold text-[#1a365d] mb-4">
+      <div className="bg-[#F5F5F5] border border-gray-200 rounded p-6 my-8 text-left">
+        <h2 className="font-bold text-[#022444] mb-4">
           Numer referencyjny wniosku
         </h2>
         <div className="bg-white border border-gray-200 rounded p-4 text-center mb-4">
-          <span className="text-2xl font-mono font-bold text-[#1a365d] tracking-widest">
+          <span className="text-2xl font-mono font-bold text-[#022444] tracking-widest">
             ESTA-2026-XXXX-XXXX
           </span>
         </div>
@@ -53,7 +53,7 @@ export default function Complete() {
       </div>
 
       <div className="bg-white border border-gray-200 rounded p-6 text-left mb-8">
-        <h2 className="font-bold text-[#1a365d] mb-4">Co dalej?</h2>
+        <h2 className="font-bold text-[#022444] mb-4">Co dalej?</h2>
         <ol className="list-decimal list-inside space-y-3 text-sm text-gray-600">
           <li>
             <strong>Oczekuj na zatwierdzenie</strong> &mdash; wiekszosc wnioskow
@@ -64,7 +64,7 @@ export default function Complete() {
             <strong>Sprawdz status</strong> &mdash; wejdz na{" "}
             <a
               href="https://esta.cbp.dhs.gov"
-              className="text-[#1a365d] underline"
+              className="text-[#022444] underline"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -87,13 +87,13 @@ export default function Complete() {
       <div className="flex flex-col sm:flex-row justify-center gap-3">
         <Link
           href="/esta-info/status-check/"
-          className="bg-[#1a365d] hover:bg-[#2a4a7f] text-white px-6 py-3 rounded font-bold text-sm transition"
+          className="bg-[#022444] hover:bg-[#0a3a6b] text-white px-6 py-3 rounded font-bold text-sm transition"
         >
           Jak sprawdzic status wniosku
         </Link>
         <Link
           href="/"
-          className="border border-gray-300 hover:border-[#1a365d] text-gray-700 px-6 py-3 rounded font-bold text-sm transition"
+          className="border border-gray-300 hover:border-[#022444] text-gray-700 px-6 py-3 rounded font-bold text-sm transition"
         >
           Strona glowna
         </Link>

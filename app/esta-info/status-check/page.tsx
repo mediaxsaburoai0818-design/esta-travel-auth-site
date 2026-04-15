@@ -19,7 +19,7 @@ export default function StatusCheck() {
       />
 
       <h1
-        className="text-3xl md:text-4xl font-bold text-[#1a365d] mb-6"
+        className="text-3xl md:text-4xl font-bold text-[#022444] mb-6"
         style={{ fontFamily: "var(--font-noto-serif), serif" }}
       >
         Sprawdzenie statusu wniosku ESTA
@@ -43,7 +43,7 @@ export default function StatusCheck() {
               href="https://esta.cbp.dhs.gov"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#1a365d] underline"
+              className="text-[#022444] underline"
             >
               esta.cbp.dhs.gov
             </a>
@@ -116,7 +116,7 @@ export default function StatusCheck() {
           </li>
         </ul>
 
-        <div className="bg-[#f8f9fa] border-l-4 border-[#1a365d] p-4 rounded-r text-sm">
+        <div className="bg-[#F5F5F5] border-l-4 border-[#022444] p-4 rounded-r text-sm">
           <strong>Wskazowka:</strong> Zapisz numer referencyjny wniosku w
           bezpiecznym miejscu. Bez niego sprawdzenie statusu moze byc
           utrudnione.
@@ -126,13 +126,13 @@ export default function StatusCheck() {
       <div className="mt-10 flex flex-col sm:flex-row gap-3">
         <Link
           href="/esta-info/expiration/"
-          className="bg-[#1a365d] hover:bg-[#2a4a7f] text-white px-6 py-3 rounded font-bold text-sm transition text-center"
+          className="bg-[#022444] hover:bg-[#0a3a6b] text-white px-6 py-3 rounded font-bold text-sm transition text-center"
         >
           Okres waznosci ESTA &rarr;
         </Link>
         <Link
           href="/apply/"
-          className="bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold py-3 px-8 rounded text-sm transition text-center"
+          className="bg-[#8d1812] hover:bg-[#6d120e] text-white font-bold py-3 px-8 text-sm transition text-center border-[3px] border-double border-[#6d120e]"
         >
           Zloz wniosek ESTA
         </Link>

@@ -19,7 +19,7 @@ export default function OfficialCBP() {
       />
 
       <h1
-        className="text-3xl md:text-4xl font-bold text-[#1a365d] mb-6"
+        className="text-3xl md:text-4xl font-bold text-[#022444] mb-6"
         style={{ fontFamily: "var(--font-noto-serif), serif" }}
       >
         Oficjalna strona CBP do skladania wnioskow ESTA
@@ -36,13 +36,13 @@ export default function OfficialCBP() {
         >
           Oficjalny adres strony
         </h2>
-        <div className="bg-[#f8f9fa] border border-gray-200 rounded p-6 text-center">
+        <div className="bg-[#F5F5F5] border border-gray-200 rounded p-6 text-center">
           <p className="text-sm text-gray-500 mb-2">Oficjalna strona ESTA:</p>
           <a
             href="https://esta.cbp.dhs.gov"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-2xl font-bold text-[#1a365d] underline"
+            className="text-2xl font-bold text-[#022444] underline"
           >
             https://esta.cbp.dhs.gov
           </a>
@@ -73,7 +73,7 @@ export default function OfficialCBP() {
         >
           Jak rozpoznac falszywa strone?
         </h2>
-        <div className="bg-red-50 border-l-4 border-[#c41e3a] p-4 rounded-r text-sm">
+        <div className="bg-red-50 border-l-4 border-[#8d1812] p-4 rounded-r text-sm">
           <p className="font-bold mb-2">Znaki ostrzegawcze:</p>
           <ul className="list-disc list-inside space-y-1">
             <li>Adres URL nie konczy sie na .gov</li>
@@ -109,7 +109,7 @@ export default function OfficialCBP() {
               href="https://www.cbp.gov/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#1a365d] underline"
+              className="text-[#022444] underline"
             >
               www.cbp.gov
             </a>{" "}
@@ -120,7 +120,7 @@ export default function OfficialCBP() {
               href="https://travel.state.gov/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#1a365d] underline"
+              className="text-[#022444] underline"
             >
               travel.state.gov
             </a>{" "}
@@ -131,7 +131,7 @@ export default function OfficialCBP() {
               href="https://pl.usembassy.gov/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#1a365d] underline"
+              className="text-[#022444] underline"
             >
               pl.usembassy.gov
             </a>{" "}
@@ -143,13 +143,13 @@ export default function OfficialCBP() {
       <div className="mt-10 flex flex-col sm:flex-row gap-3">
         <Link
           href="/esta-info/application/"
-          className="bg-[#1a365d] hover:bg-[#2a4a7f] text-white px-6 py-3 rounded font-bold text-sm transition text-center"
+          className="bg-[#022444] hover:bg-[#0a3a6b] text-white px-6 py-3 rounded font-bold text-sm transition text-center"
         >
           Jak zlozyc wniosek &rarr;
         </Link>
         <Link
           href="/apply/"
-          className="bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold py-3 px-8 rounded text-sm transition text-center"
+          className="bg-[#8d1812] hover:bg-[#6d120e] text-white font-bold py-3 px-8 text-sm transition text-center border-[3px] border-double border-[#6d120e]"
         >
           Zloz wniosek ESTA
         </Link>

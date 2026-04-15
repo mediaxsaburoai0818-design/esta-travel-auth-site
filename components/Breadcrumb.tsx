@@ -10,7 +10,7 @@ export default function Breadcrumb({ items }: { items: BreadcrumbItem[] }) {
     <nav className="text-sm text-gray-500 mb-8" aria-label="Breadcrumb">
       <ol className="flex flex-wrap items-center space-x-1">
         <li>
-          <Link href="/" className="hover:text-[#1a365d] transition">
+          <Link href="/" className="hover:text-[#022444] transition">
             Strona glowna
           </Link>
         </li>
@@ -18,7 +18,7 @@ export default function Breadcrumb({ items }: { items: BreadcrumbItem[] }) {
           <li key={i} className="flex items-center space-x-1">
             <span className="mx-1">/</span>
             {item.href ? (
-              <Link href={item.href} className="hover:text-[#1a365d] transition">
+              <Link href={item.href} className="hover:text-[#022444] transition">
                 {item.label}
               </Link>
             ) : (

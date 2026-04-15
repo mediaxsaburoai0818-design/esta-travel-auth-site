@@ -18,7 +18,7 @@ export default function About() {
       />
 
       <h1
-        className="text-3xl md:text-4xl font-bold text-[#1a365d] mb-6"
+        className="text-3xl md:text-4xl font-bold text-[#022444] mb-6"
         style={{ fontFamily: "var(--font-noto-serif), serif" }}
       >
         O nas
@@ -64,7 +64,7 @@ export default function About() {
         >
           Wazne zastrzezenie
         </h2>
-        <div className="bg-[#f8f9fa] border-l-4 border-[#1a365d] p-4 rounded-r text-sm">
+        <div className="bg-[#F5F5F5] border-l-4 border-[#022444] p-4 rounded-r text-sm">
           <p>
             ESTA Online nie jest oficjalna strona rzadu Stanow Zjednoczonych.
             Nie jestesmy powiazani z U.S. Customs and Border Protection (CBP)
@@ -72,7 +72,7 @@ export default function About() {
             wnioskow ESTA to{" "}
             <a
               href="https://esta.cbp.dhs.gov"
-              className="text-[#1a365d] underline"
+              className="text-[#022444] underline"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -105,7 +105,7 @@ export default function About() {
               <tr>
                 <td className="py-2 pr-4 text-gray-500 font-medium">Kontakt:</td>
                 <td className="py-2">
-                  <Link href="/site-info/contact/" className="text-[#1a365d] underline">
+                  <Link href="/site-info/contact/" className="text-[#022444] underline">
                     Formularz kontaktowy
                   </Link>
                 </td>

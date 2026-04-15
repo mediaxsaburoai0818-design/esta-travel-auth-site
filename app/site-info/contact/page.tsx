@@ -18,7 +18,7 @@ export default function Contact() {
   };
 
   const inputClass =
-    "w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:border-[#1a365d] focus:ring-1 focus:ring-[#1a365d] transition";
+    "w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:border-[#022444] focus:ring-1 focus:ring-[#022444] transition";
 
   if (submitted) {
     return (
@@ -39,7 +39,7 @@ export default function Contact() {
           </svg>
         </div>
         <h1
-          className="text-2xl font-bold text-[#1a365d] mb-4"
+          className="text-2xl font-bold text-[#022444] mb-4"
           style={{ fontFamily: "var(--font-noto-serif), serif" }}
         >
           Wiadomosc wyslana
@@ -49,7 +49,7 @@ export default function Contact() {
         </p>
         <Link
           href="/"
-          className="inline-block bg-[#1a365d] hover:bg-[#2a4a7f] text-white px-6 py-2 rounded font-bold text-sm transition"
+          className="inline-block bg-[#022444] hover:bg-[#0a3a6b] text-white px-6 py-2 rounded font-bold text-sm transition"
         >
           Strona glowna
         </Link>
@@ -60,7 +60,7 @@ export default function Contact() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-12">
       <nav className="text-sm text-gray-500 mb-8">
-        <Link href="/" className="hover:text-[#1a365d]">
+        <Link href="/" className="hover:text-[#022444]">
           Strona glowna
         </Link>
         <span className="mx-1">/</span>
@@ -68,7 +68,7 @@ export default function Contact() {
       </nav>
 
       <h1
-        className="text-3xl md:text-4xl font-bold text-[#1a365d] mb-4"
+        className="text-3xl md:text-4xl font-bold text-[#022444] mb-4"
         style={{ fontFamily: "var(--font-noto-serif), serif" }}
       >
         Kontakt
@@ -137,20 +137,20 @@ export default function Contact() {
         </div>
         <button
           type="submit"
-          className="bg-[#1a365d] hover:bg-[#2a4a7f] text-white px-6 py-2.5 rounded font-bold text-sm transition"
+          className="bg-[#022444] hover:bg-[#0a3a6b] text-white px-6 py-2.5 rounded font-bold text-sm transition"
         >
           Wyslij wiadomosc
         </button>
       </form>
 
-      <div className="mt-10 bg-[#f8f9fa] border border-gray-200 rounded p-4 text-sm text-gray-500">
+      <div className="mt-10 bg-[#F5F5F5] border border-gray-200 rounded p-4 text-sm text-gray-500">
         <p>
           <strong>Uwaga:</strong> Nie jestesmy w stanie udzielic informacji
           na temat statusu konkretnego wniosku ESTA. W sprawie statusu
           wniosku prosimy o kontakt z{" "}
           <a
             href="https://esta.cbp.dhs.gov"
-            className="text-[#1a365d] underline"
+            className="text-[#022444] underline"
             target="_blank"
             rel="noopener noreferrer"
           >

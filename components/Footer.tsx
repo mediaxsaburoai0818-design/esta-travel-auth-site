@@ -4,21 +4,20 @@ export default function Footer() {
   return (
     <footer>
       {/* Main footer */}
-      <div className="bg-[#f8f9fa] border-t border-gray-200">
+      <div className="bg-[#011a33]">
         <div className="max-w-6xl mx-auto px-4 py-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {/* Site info */}
             <div>
               <p
-                className="text-lg font-bold mb-3"
+                className="text-lg font-bold mb-3 text-white"
                 style={{
                   fontFamily: "var(--font-noto-serif), serif",
-                  color: "#1a365d",
                 }}
               >
                 ESTA Online
               </p>
-              <p className="text-sm text-gray-600 leading-relaxed">
+              <p className="text-sm text-gray-300 leading-relaxed">
                 Kompletny przewodnik po Elektronicznym Systemie Autoryzacji
                 Podrozy (ESTA) do Stanow Zjednoczonych.
               </p>
@@ -26,14 +25,14 @@ export default function Footer() {
 
             {/* ESTA Info links */}
             <div>
-              <h3 className="text-sm font-bold text-[#1a365d] mb-3 uppercase tracking-wider">
+              <h3 className="text-sm font-bold text-white mb-3 uppercase tracking-wider">
                 Informacje o ESTA
               </h3>
               <ul className="space-y-2 text-sm">
                 <li>
                   <Link
                     href="/esta-info/what-is-esta/"
-                    className="text-gray-600 hover:text-[#1a365d] transition"
+                    className="text-gray-300 hover:text-white transition"
                   >
                     Czym jest ESTA?
                   </Link>
@@ -41,7 +40,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/esta-info/application/"
-                    className="text-gray-600 hover:text-[#1a365d] transition"
+                    className="text-gray-300 hover:text-white transition"
                   >
                     Sposob skladania wniosku
                   </Link>
@@ -49,7 +48,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/esta-info/fee/"
-                    className="text-gray-600 hover:text-[#1a365d] transition"
+                    className="text-gray-300 hover:text-white transition"
                   >
                     Oplaty
                   </Link>
@@ -57,7 +56,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/esta-info/expiration/"
-                    className="text-gray-600 hover:text-[#1a365d] transition"
+                    className="text-gray-300 hover:text-white transition"
                   >
                     Okres waznosci
                   </Link>
@@ -65,7 +64,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/esta-info/status-check/"
-                    className="text-gray-600 hover:text-[#1a365d] transition"
+                    className="text-gray-300 hover:text-white transition"
                   >
                     Sprawdzenie statusu
                   </Link>
@@ -73,7 +72,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/faq/"
-                    className="text-gray-600 hover:text-[#1a365d] transition"
+                    className="text-gray-300 hover:text-white transition"
                   >
                     FAQ
                   </Link>
@@ -83,14 +82,14 @@ export default function Footer() {
 
             {/* Site info links */}
             <div>
-              <h3 className="text-sm font-bold text-[#1a365d] mb-3 uppercase tracking-wider">
+              <h3 className="text-sm font-bold text-white mb-3 uppercase tracking-wider">
                 Informacje o stronie
               </h3>
               <ul className="space-y-2 text-sm">
                 <li>
                   <Link
                     href="/site-info/about/"
-                    className="text-gray-600 hover:text-[#1a365d] transition"
+                    className="text-gray-300 hover:text-white transition"
                   >
                     O nas
                   </Link>
@@ -98,7 +97,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/site-info/contact/"
-                    className="text-gray-600 hover:text-[#1a365d] transition"
+                    className="text-gray-300 hover:text-white transition"
                   >
                     Kontakt
                   </Link>
@@ -106,7 +105,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/site-info/privacy-policy/"
-                    className="text-gray-600 hover:text-[#1a365d] transition"
+                    className="text-gray-300 hover:text-white transition"
                   >
                     Polityka prywatnosci
                   </Link>
@@ -114,7 +113,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/site-info/agreement/"
-                    className="text-gray-600 hover:text-[#1a365d] transition"
+                    className="text-gray-300 hover:text-white transition"
                   >
                     Regulamin
                   </Link>
@@ -122,7 +121,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/site-info/contents-policy/"
-                    className="text-gray-600 hover:text-[#1a365d] transition"
+                    className="text-gray-300 hover:text-white transition"
                   >
                     Polityka tresci
                   </Link>
@@ -130,7 +129,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/sitemap/"
-                    className="text-gray-600 hover:text-[#1a365d] transition"
+                    className="text-gray-300 hover:text-white transition"
                   >
                     Mapa strony
                   </Link>
@@ -140,7 +139,7 @@ export default function Footer() {
 
             {/* Official links */}
             <div>
-              <h3 className="text-sm font-bold text-[#1a365d] mb-3 uppercase tracking-wider">
+              <h3 className="text-sm font-bold text-white mb-3 uppercase tracking-wider">
                 Strony oficjalne
               </h3>
               <ul className="space-y-2 text-sm">
@@ -149,7 +148,7 @@ export default function Footer() {
                     href="https://esta.cbp.dhs.gov"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-600 hover:text-[#1a365d] transition"
+                    className="text-gray-300 hover:text-white transition"
                   >
                     Oficjalna strona ESTA (CBP)
                   </a>
@@ -159,7 +158,7 @@ export default function Footer() {
                     href="https://pl.usembassy.gov/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-600 hover:text-[#1a365d] transition"
+                    className="text-gray-300 hover:text-white transition"
                   >
                     Ambasada USA w Polsce
                   </a>
@@ -169,18 +168,18 @@ export default function Footer() {
                     href="https://travel.state.gov/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-600 hover:text-[#1a365d] transition"
+                    className="text-gray-300 hover:text-white transition"
                   >
                     U.S. Department of State
                   </a>
                 </li>
               </ul>
-              <div className="mt-4 p-3 bg-white border border-gray-200 rounded text-xs text-gray-500">
+              <div className="mt-4 p-3 bg-[#022444] border border-white/10 rounded text-xs text-gray-400">
                 Niniejsza strona nie jest powiazana z rzadem USA. Oficjalna
                 strona ESTA:{" "}
                 <a
                   href="https://esta.cbp.dhs.gov"
-                  className="text-[#1a365d] underline"
+                  className="text-gray-200 underline hover:text-white"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -192,9 +191,9 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-gray-200 py-4">
+        <div className="border-t border-white/10 py-4">
           <div className="max-w-6xl mx-auto px-4">
-            <p className="text-xs text-center text-gray-500">
+            <p className="text-xs text-center text-gray-400">
               &copy; {new Date().getFullYear()} ESTA Online. Wszelkie prawa
               zastrzezone. | Strona informacyjna &mdash; nie jest oficjalna
               strona rzadu USA.

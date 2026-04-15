@@ -19,7 +19,7 @@ export default function MobileApp() {
       />
 
       <h1
-        className="text-3xl md:text-4xl font-bold text-[#1a365d] mb-6"
+        className="text-3xl md:text-4xl font-bold text-[#022444] mb-6"
         style={{ fontFamily: "var(--font-noto-serif), serif" }}
       >
         ESTA Mobile &mdash; aplikacja do skladania wnioskow
@@ -97,7 +97,7 @@ export default function MobileApp() {
           <li>Powiadomienia o statusie wniosku</li>
         </ul>
 
-        <div className="bg-[#f8f9fa] border-l-4 border-[#1a365d] p-4 rounded-r text-sm">
+        <div className="bg-[#F5F5F5] border-l-4 border-[#022444] p-4 rounded-r text-sm">
           <strong>Uwaga:</strong> Upewnij sie, ze pobierasz oficjalna aplikacje
           CBP. Szukaj wydawcy &quot;U.S. Customs and Border Protection&quot; w
           sklepie z aplikacjami.
@@ -107,13 +107,13 @@ export default function MobileApp() {
       <div className="mt-10 flex flex-col sm:flex-row gap-3">
         <Link
           href="/esta-info/application/"
-          className="bg-[#1a365d] hover:bg-[#2a4a7f] text-white px-6 py-3 rounded font-bold text-sm transition text-center"
+          className="bg-[#022444] hover:bg-[#0a3a6b] text-white px-6 py-3 rounded font-bold text-sm transition text-center"
         >
           Sposob skladania wniosku &rarr;
         </Link>
         <Link
           href="/apply/"
-          className="bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold py-3 px-8 rounded text-sm transition text-center"
+          className="bg-[#8d1812] hover:bg-[#6d120e] text-white font-bold py-3 px-8 text-sm transition text-center border-[3px] border-double border-[#6d120e]"
         >
           Zloz wniosek ESTA
         </Link>

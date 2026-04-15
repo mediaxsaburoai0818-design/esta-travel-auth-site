@@ -18,7 +18,7 @@ export default function Agreement() {
       />
 
       <h1
-        className="text-3xl md:text-4xl font-bold text-[#1a365d] mb-6"
+        className="text-3xl md:text-4xl font-bold text-[#022444] mb-6"
         style={{ fontFamily: "var(--font-noto-serif), serif" }}
       >
         Regulamin
@@ -115,7 +115,7 @@ export default function Agreement() {
         </h2>
         <p>
           W sprawach dotyczacych regulaminu prosimy o kontakt poprzez{" "}
-          <Link href="/site-info/contact/" className="text-[#1a365d] underline">
+          <Link href="/site-info/contact/" className="text-[#022444] underline">
             formularz kontaktowy
           </Link>
           .

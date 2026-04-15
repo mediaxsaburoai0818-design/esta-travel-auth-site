@@ -67,7 +67,7 @@ export default function Sitemap() {
       <Breadcrumb items={[{ label: "Mapa strony" }]} />
 
       <h1
-        className="text-3xl md:text-4xl font-bold text-[#1a365d] mb-8"
+        className="text-3xl md:text-4xl font-bold text-[#022444] mb-8"
         style={{ fontFamily: "var(--font-noto-serif), serif" }}
       >
         Mapa strony
@@ -76,7 +76,7 @@ export default function Sitemap() {
       <div className="space-y-8">
         {sections.map((section) => (
           <div key={section.title}>
-            <h2 className="font-bold text-[#1a365d] text-lg mb-3 border-b border-gray-200 pb-2">
+            <h2 className="font-bold text-[#022444] text-lg mb-3 border-b border-gray-200 pb-2">
               {section.title}
             </h2>
             <ul className="space-y-2">
@@ -84,7 +84,7 @@ export default function Sitemap() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-gray-600 hover:text-[#1a365d] transition underline underline-offset-2"
+                    className="text-sm text-gray-600 hover:text-[#022444] transition underline underline-offset-2"
                   >
                     {link.label}
                   </Link>

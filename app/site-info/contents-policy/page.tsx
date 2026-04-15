@@ -18,7 +18,7 @@ export default function ContentsPolicy() {
       />
 
       <h1
-        className="text-3xl md:text-4xl font-bold text-[#1a365d] mb-6"
+        className="text-3xl md:text-4xl font-bold text-[#022444] mb-6"
         style={{ fontFamily: "var(--font-noto-serif), serif" }}
       >
         Polityka tresci
@@ -88,7 +88,7 @@ export default function ContentsPolicy() {
         <p>
           Jesli znajdziesz blad lub nieaktualna informacje w serwisie, prosimy
           o{" "}
-          <Link href="/site-info/contact/" className="text-[#1a365d] underline">
+          <Link href="/site-info/contact/" className="text-[#022444] underline">
             kontakt
           </Link>
           . Dokladamy starannosci, aby poprawic wszelkie bledy w najkrotszym

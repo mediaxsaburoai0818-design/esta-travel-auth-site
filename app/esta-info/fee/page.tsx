@@ -19,7 +19,7 @@ export default function Fee() {
       />
 
       <h1
-        className="text-3xl md:text-4xl font-bold text-[#1a365d] mb-6"
+        className="text-3xl md:text-4xl font-bold text-[#022444] mb-6"
         style={{ fontFamily: "var(--font-noto-serif), serif" }}
       >
         Oplaty za wniosek ESTA
@@ -39,15 +39,15 @@ export default function Fee() {
         </h2>
         <div className="overflow-x-auto">
           <table className="w-full text-sm border border-gray-200">
-            <thead className="bg-[#f8f9fa]">
+            <thead className="bg-[#F5F5F5]">
               <tr>
-                <th className="text-left p-3 border-b border-gray-200 font-bold text-[#1a365d]">
+                <th className="text-left p-3 border-b border-gray-200 font-bold text-[#022444]">
                   Skladnik
                 </th>
-                <th className="text-left p-3 border-b border-gray-200 font-bold text-[#1a365d]">
+                <th className="text-left p-3 border-b border-gray-200 font-bold text-[#022444]">
                   Kwota
                 </th>
-                <th className="text-left p-3 border-b border-gray-200 font-bold text-[#1a365d]">
+                <th className="text-left p-3 border-b border-gray-200 font-bold text-[#022444]">
                   Opis
                 </th>
               </tr>
@@ -82,7 +82,7 @@ export default function Fee() {
           </table>
         </div>
 
-        <div className="bg-[#f8f9fa] border-l-4 border-[#1a365d] p-4 rounded-r text-sm">
+        <div className="bg-[#F5F5F5] border-l-4 border-[#022444] p-4 rounded-r text-sm">
           <strong>Uwaga:</strong> Jesli wniosek zostanie odrzucony, pobierana
           jest tylko oplata za rozpatrzenie ($4). Oplata za autoryzacje ($17)
           nie jest wtedy naliczana.
@@ -120,12 +120,12 @@ export default function Fee() {
         </h2>
         <div className="overflow-x-auto">
           <table className="w-full text-sm border border-gray-200">
-            <thead className="bg-[#f8f9fa]">
+            <thead className="bg-[#F5F5F5]">
               <tr>
-                <th className="text-left p-3 border-b border-gray-200 font-bold text-[#1a365d]">
+                <th className="text-left p-3 border-b border-gray-200 font-bold text-[#022444]">
                   Zrodlo
                 </th>
-                <th className="text-left p-3 border-b border-gray-200 font-bold text-[#1a365d]">
+                <th className="text-left p-3 border-b border-gray-200 font-bold text-[#022444]">
                   Koszt
                 </th>
               </tr>
@@ -151,14 +151,14 @@ export default function Fee() {
           </table>
         </div>
 
-        <div className="bg-red-50 border-l-4 border-[#c41e3a] p-4 rounded-r text-sm">
+        <div className="bg-red-50 border-l-4 border-[#8d1812] p-4 rounded-r text-sm">
           <strong>Ostrzezenie:</strong> Wielu posrednikow prowadzi strony
           internetowe, ktore wygladaja jak oficjalne strony ESTA. Pobieraja
           zawyzone oplaty ($80-200) za wypelnienie tego samego formularza. Zawsze
           skladaj wniosek bezposrednio na{" "}
           <a
             href="https://esta.cbp.dhs.gov"
-            className="text-[#1a365d] underline"
+            className="text-[#022444] underline"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -171,13 +171,13 @@ export default function Fee() {
       <div className="mt-10 flex flex-col sm:flex-row gap-3">
         <Link
           href="/esta-info/application/"
-          className="bg-[#1a365d] hover:bg-[#2a4a7f] text-white px-6 py-3 rounded font-bold text-sm transition text-center"
+          className="bg-[#022444] hover:bg-[#0a3a6b] text-white px-6 py-3 rounded font-bold text-sm transition text-center"
         >
           Jak zlozyc wniosek &rarr;
         </Link>
         <Link
           href="/apply/"
-          className="bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold py-3 px-8 rounded text-sm transition text-center"
+          className="bg-[#8d1812] hover:bg-[#6d120e] text-white font-bold py-3 px-8 text-sm transition text-center border-[3px] border-double border-[#6d120e]"
         >
           Zloz wniosek ESTA
         </Link>

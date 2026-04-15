@@ -19,7 +19,7 @@ export default function PlaceOfBirth() {
       />
 
       <h1
-        className="text-3xl md:text-4xl font-bold text-[#1a365d] mb-6"
+        className="text-3xl md:text-4xl font-bold text-[#022444] mb-6"
         style={{ fontFamily: "var(--font-noto-serif), serif" }}
       >
         Miejsce urodzenia i adres w formularzu ESTA
@@ -42,7 +42,7 @@ export default function PlaceOfBirth() {
           Krakow zamiast Krakow). Jesli angielska nazwa nie jest znana, wpisz
           nazwe polska.
         </p>
-        <div className="bg-[#f8f9fa] p-4 rounded text-sm">
+        <div className="bg-[#F5F5F5] p-4 rounded text-sm">
           <p className="font-bold mb-2">Przyklady:</p>
           <ul className="space-y-1">
             <li>Warszawa &rarr; <strong>Warsaw</strong> lub <strong>Warszawa</strong></li>
@@ -71,7 +71,7 @@ export default function PlaceOfBirth() {
         <p>
           Adres zamieszkania nalezy podac w formacie angielskim:
         </p>
-        <div className="bg-[#f8f9fa] p-4 rounded text-sm">
+        <div className="bg-[#F5F5F5] p-4 rounded text-sm">
           <p className="font-bold mb-2">Format adresu:</p>
           <ul className="space-y-1">
             <li><strong>Address Line 1:</strong> Nazwa ulicy i numer domu/mieszkania</li>
@@ -82,7 +82,7 @@ export default function PlaceOfBirth() {
             <li><strong>Zip/Postal Code:</strong> Kod pocztowy (np. 00-001)</li>
           </ul>
         </div>
-        <div className="bg-[#f8f9fa] p-4 rounded text-sm mt-4">
+        <div className="bg-[#F5F5F5] p-4 rounded text-sm mt-4">
           <p className="font-bold mb-2">Przyklad:</p>
           <p>Address Line 1: Marszalkowska 1</p>
           <p>Address Line 2: Apt 5</p>
@@ -104,7 +104,7 @@ export default function PlaceOfBirth() {
           <li>Wpisanie kodu pocztowego w zlym formacie</li>
         </ul>
 
-        <div className="bg-[#f8f9fa] border-l-4 border-[#1a365d] p-4 rounded-r text-sm">
+        <div className="bg-[#F5F5F5] border-l-4 border-[#022444] p-4 rounded-r text-sm">
           <strong>Wskazowka:</strong> Jesli masz watpliwosci, wpisz dane
           dokladnie tak, jak sa w paszporcie. Zgodnosc danych jest
           najwazniejsza.
@@ -114,13 +114,13 @@ export default function PlaceOfBirth() {
       <div className="mt-10 flex flex-col sm:flex-row gap-3">
         <Link
           href="/esta-info/us-contact/"
-          className="bg-[#1a365d] hover:bg-[#2a4a7f] text-white px-6 py-3 rounded font-bold text-sm transition text-center"
+          className="bg-[#022444] hover:bg-[#0a3a6b] text-white px-6 py-3 rounded font-bold text-sm transition text-center"
         >
           Dane kontaktowe w USA &rarr;
         </Link>
         <Link
           href="/apply/"
-          className="bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold py-3 px-8 rounded text-sm transition text-center"
+          className="bg-[#8d1812] hover:bg-[#6d120e] text-white font-bold py-3 px-8 text-sm transition text-center border-[3px] border-double border-[#6d120e]"
         >
           Zloz wniosek ESTA
         </Link>

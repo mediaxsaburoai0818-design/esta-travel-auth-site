@@ -19,7 +19,7 @@ export default function Guam() {
       />
 
       <h1
-        className="text-3xl md:text-4xl font-bold text-[#1a365d] mb-6"
+        className="text-3xl md:text-4xl font-bold text-[#022444] mb-6"
         style={{ fontFamily: "var(--font-noto-serif), serif" }}
       >
         Wjazd na Guam &mdash; Czy potrzebna jest ESTA?
@@ -93,15 +93,15 @@ export default function Guam() {
         </h2>
         <div className="overflow-x-auto">
           <table className="w-full text-sm border border-gray-200">
-            <thead className="bg-[#f8f9fa]">
+            <thead className="bg-[#F5F5F5]">
               <tr>
-                <th className="text-left p-3 border-b border-gray-200 font-bold text-[#1a365d]">
+                <th className="text-left p-3 border-b border-gray-200 font-bold text-[#022444]">
                   Kryterium
                 </th>
-                <th className="text-left p-3 border-b border-gray-200 font-bold text-[#1a365d]">
+                <th className="text-left p-3 border-b border-gray-200 font-bold text-[#022444]">
                   ESTA (VWP)
                 </th>
-                <th className="text-left p-3 border-b border-gray-200 font-bold text-[#1a365d]">
+                <th className="text-left p-3 border-b border-gray-200 font-bold text-[#022444]">
                   Guam VWP
                 </th>
               </tr>
@@ -131,7 +131,7 @@ export default function Guam() {
           </table>
         </div>
 
-        <div className="bg-[#f8f9fa] border-l-4 border-[#1a365d] p-4 rounded-r text-sm">
+        <div className="bg-[#F5F5F5] border-l-4 border-[#022444] p-4 rounded-r text-sm">
           <strong>Wskazowka:</strong> Jesli planujesz odwiedzic zarowno Guam,
           jak i kontynent USA, lepiej jest uzyskac ESTA. Daje to wieksza
           elastycznosc podrozy.
@@ -141,13 +141,13 @@ export default function Guam() {
       <div className="mt-10 flex flex-col sm:flex-row gap-3">
         <Link
           href="/esta-info/what-is-esta/"
-          className="bg-[#1a365d] hover:bg-[#2a4a7f] text-white px-6 py-3 rounded font-bold text-sm transition text-center"
+          className="bg-[#022444] hover:bg-[#0a3a6b] text-white px-6 py-3 rounded font-bold text-sm transition text-center"
         >
           Czym jest ESTA? &rarr;
         </Link>
         <Link
           href="/apply/"
-          className="bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold py-3 px-8 rounded text-sm transition text-center"
+          className="bg-[#8d1812] hover:bg-[#6d120e] text-white font-bold py-3 px-8 text-sm transition text-center border-[3px] border-double border-[#6d120e]"
         >
           Zloz wniosek ESTA
         </Link>
