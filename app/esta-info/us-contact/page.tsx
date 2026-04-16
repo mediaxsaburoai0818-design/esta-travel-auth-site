@@ -113,10 +113,8 @@ export default function USContact() {
         </Link>
         <Link
           href="/apply/"
-          className="bg-[#8d1812] hover:bg-[#6d120e] text-white font-bold py-3 px-8 text-sm transition text-center border-[3px] border-double border-[#6d120e]"
-        >
-          &#10003; Zloz wniosek ESTA
-        </Link>
+          className="block w-full max-w-md mx-auto bg-[#8d1812] hover:bg-[#6d120e] rounded-lg py-5 px-6 text-center transition shadow-lg" style={{ color: "white", textDecoration: "none" }}
+        ><span className="text-white text-lg font-bold" style={{ color: "white" }}>&#10003; Zloz wniosek ESTA</span></Link>
       </div>
     </div>
   );

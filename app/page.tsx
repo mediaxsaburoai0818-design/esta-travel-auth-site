@@ -31,18 +31,19 @@ export default function Home() {
             <p className="text-xs md:text-sm mb-6 md:mb-8 text-gray-200 drop-shadow">
               Program Ruchu Bezwizowego (VWP) | Polska jest krajem uprawnionym
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
+            <div className="flex flex-col gap-4 items-center mt-2">
               <Link
                 href="/apply/"
-                className="bg-[#8d1812] hover:bg-[#6d120e] text-white font-bold py-4 px-8 text-lg transition text-center shadow-lg inline-block w-full sm:w-auto border-[3px] border-double border-[#6d120e]"
+                className="block w-full max-w-md bg-[#8d1812] hover:bg-[#6d120e] rounded-lg py-5 px-6 text-center transition shadow-lg"
+                style={{ color: "white", textDecoration: "none" }}
               >
-                &#10003; Zloz wniosek ESTA
+                <span className="text-white text-lg font-bold no-underline" style={{ color: "white" }}>&#10003; Zloz wniosek ESTA</span>
               </Link>
               <Link
                 href="/esta-info/what-is-esta/"
-                className="bg-white/10 hover:bg-white/20 text-white px-7 py-3 rounded font-bold text-base transition border border-white/30 text-center inline-block w-full sm:w-auto"
+                className="text-gray-200 hover:text-white text-sm underline underline-offset-2 transition"
               >
-                Dowiedz sie wiecej
+                Dowiedz sie wiecej &rarr;
               </Link>
             </div>
           </div>
@@ -312,9 +313,10 @@ export default function Home() {
           </p>
           <Link
             href="/apply/"
-            className="inline-block bg-[#8d1812] hover:bg-[#6d120e] text-white font-bold py-4 px-8 text-lg transition border-[3px] border-double border-[#6d120e]"
+            className="block w-full max-w-md mx-auto bg-[#8d1812] hover:bg-[#6d120e] rounded-lg py-5 px-6 text-center transition shadow-lg"
+            style={{ color: "white", textDecoration: "none" }}
           >
-            &#10003; Zloz wniosek ESTA
+            <span className="text-white text-lg font-bold" style={{ color: "white" }}>&#10003; Zloz wniosek ESTA</span>
           </Link>
         </div>
       </section>

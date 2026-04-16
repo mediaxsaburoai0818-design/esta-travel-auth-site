@@ -114,9 +114,10 @@ export default function Header() {
             </Link>
             <Link
               href="/apply/"
-              className="ml-3 bg-[#8d1812] hover:bg-[#6d120e] text-white font-bold py-3 px-8 text-sm transition border-[3px] border-double border-[#6d120e]"
+              className="ml-3 bg-[#8d1812] hover:bg-[#6d120e] rounded-lg py-2.5 px-6 text-sm transition shadow-md"
+              style={{ color: "white", textDecoration: "none" }}
             >
-              &#10003; Zloz wniosek ESTA
+              <span style={{ color: "white" }}>&#10003; Zloz wniosek ESTA</span>
             </Link>
           </nav>
 
@@ -252,10 +253,11 @@ export default function Header() {
             </div>
             <Link
               href="/apply/"
-              className="block bg-[#8d1812] hover:bg-[#6d120e] text-white font-bold py-3 px-8 text-sm text-center mt-2 border-[3px] border-double border-[#6d120e]"
+              className="block bg-[#8d1812] hover:bg-[#6d120e] rounded-lg py-3 px-6 text-sm text-center mt-2 transition shadow-md"
+              style={{ color: "white", textDecoration: "none" }}
               onClick={() => setMobileMenuOpen(false)}
             >
-              &#10003; Zloz wniosek ESTA
+              <span style={{ color: "white" }}>&#10003; Zloz wniosek ESTA</span>
             </Link>
           </nav>
         )}
