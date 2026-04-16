@@ -39,7 +39,7 @@ export default function Header() {
             >
               ESTA Online
             </span>
-            <span className="text-[10px] md:text-xs text-gray-300 tracking-wider">
+            <span className="text-[10px] md:text-xs text-gray-100 tracking-wider">
               Autoryzacja podrozy do USA
             </span>
           </Link>
