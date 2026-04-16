@@ -48,14 +48,13 @@ html {
 
 /* Heading band for section H2s on content pages */
 .heading-band {
-  background-color: #f3f4f6;
-  color: #022444 !important;
+  background-color: #022444;
+  color: white !important;
   padding: 1rem 1.5rem;
   font-weight: bold;
   font-size: 1.125rem;
   line-height: 1.4;
   word-break: break-word;
-  border-left: 4px solid #022444;
 }
 @media (max-width: 767px) {
   .heading-band {

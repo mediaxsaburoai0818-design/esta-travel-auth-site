@@ -30,16 +30,18 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex flex-col">
+          <Link href="/" className="flex flex-col" style={{ textDecoration: "none" }}>
             <span
-              className="text-xl md:text-2xl font-bold tracking-wide text-white leading-tight"
+              className="text-xl md:text-2xl font-bold tracking-wide leading-tight"
               style={{
                 fontFamily: "var(--font-noto-serif), serif",
+                color: "white",
+                textDecoration: "none",
               }}
             >
               ESTA Online
             </span>
-            <span className="text-[10px] md:text-xs text-gray-100 tracking-wider">
+            <span className="text-[10px] md:text-xs tracking-wider" style={{ color: "white", textDecoration: "none" }}>
               Autoryzacja podrozy do USA
             </span>
           </Link>

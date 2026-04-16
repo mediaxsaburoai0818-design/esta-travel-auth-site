@@ -24,11 +24,11 @@ export default function Home() {
               <br />
               Podrozy do USA
             </h1>
-            <p className="text-base md:text-xl mb-3 md:mb-4 text-gray-100 leading-relaxed drop-shadow">
+            <p className="text-base md:text-xl mb-3 md:mb-4 leading-relaxed drop-shadow" style={{ color: "#d0d0d0" }}>
               Zlozenie wniosku zajmuje do 3 dni. Prosimy o wczesniejsze
               zalatwienie formalnosci.
             </p>
-            <p className="text-xs md:text-sm mb-6 md:mb-8 text-gray-200 drop-shadow">
+            <p className="text-xs md:text-sm mb-6 md:mb-8 drop-shadow" style={{ color: "#b0b0b0" }}>
               Program Ruchu Bezwizowego (VWP) | Polska jest krajem uprawnionym
             </p>
             <div className="flex flex-col gap-3 items-center mt-2 w-full" style={{ maxWidth: "360px", margin: "0 auto" }}>
@@ -38,13 +38,6 @@ export default function Home() {
                 style={{ color: "white", textDecoration: "none", padding: "18px 24px" }}
               >
                 <span style={{ color: "white", fontSize: "18px", fontWeight: "bold" }}>&#10003; Zloz wniosek ESTA</span>
-              </Link>
-              <Link
-                href="/esta-info/what-is-esta/"
-                className="block w-full rounded text-center transition"
-                style={{ color: "white", textDecoration: "none", padding: "14px 24px", border: "2px solid white", backgroundColor: "#022444" }}
-              >
-                <span style={{ color: "white", fontSize: "16px", fontWeight: "bold" }}>Dowiedz sie wiecej</span>
               </Link>
             </div>
           </div>
@@ -83,7 +76,7 @@ export default function Home() {
       {/* ESTA overview */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4">
-          <h2 className="bg-gray-100 text-[#022444] py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug border-l-4 border-[#022444] mb-6">
+          <h2 className="py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6" style={{ backgroundColor: "#022444", color: "white" }}>
             Czym jest ESTA?
           </h2>
           <p className="text-gray-600 mb-4 leading-relaxed">
@@ -110,12 +103,12 @@ export default function Home() {
       {/* Application steps */}
       <section className="py-16 bg-[#F5F5F5]">
         <div className="max-w-3xl mx-auto px-4">
-          <h2 className="bg-gray-100 text-[#022444] py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug border-l-4 border-[#022444] mb-8">
+          <h2 className="py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6" style={{ backgroundColor: "#022444", color: "white" }}>
             Jak zlozyc wniosek ESTA?
           </h2>
 
           <div className="space-y-6">
-            <div className="flex items-start space-x-4">
+            <div className="flex items-center space-x-4">
               <span className="flex-shrink-0 w-8 h-8 bg-[#022444] text-white rounded-full flex items-center justify-center text-sm font-bold">
                 1
               </span>
@@ -130,7 +123,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex items-start space-x-4">
+            <div className="flex items-center space-x-4">
               <span className="flex-shrink-0 w-8 h-8 bg-[#022444] text-white rounded-full flex items-center justify-center text-sm font-bold">
                 2
               </span>
@@ -145,7 +138,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex items-start space-x-4">
+            <div className="flex items-center space-x-4">
               <span className="flex-shrink-0 w-8 h-8 bg-[#022444] text-white rounded-full flex items-center justify-center text-sm font-bold">
                 3
               </span>
@@ -160,7 +153,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex items-start space-x-4">
+            <div className="flex items-center space-x-4">
               <span className="flex-shrink-0 w-8 h-8 bg-[#022444] text-white rounded-full flex items-center justify-center text-sm font-bold">
                 4
               </span>
@@ -190,7 +183,7 @@ export default function Home() {
       {/* FAQ preview */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4">
-          <h2 className="bg-gray-100 text-[#022444] py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug border-l-4 border-[#022444] mb-8">
+          <h2 className="py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6" style={{ backgroundColor: "#022444", color: "white" }}>
             Najczesciej zadawane pytania
           </h2>
 
@@ -244,7 +237,7 @@ export default function Home() {
       {/* Related pages */}
       <section className="py-16 bg-[#F5F5F5]">
         <div className="max-w-3xl mx-auto px-4">
-          <h2 className="bg-gray-100 text-[#022444] py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug border-l-4 border-[#022444] mb-8">
+          <h2 className="py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6" style={{ backgroundColor: "#022444", color: "white" }}>
             Przydatne strony
           </h2>
 
@@ -284,7 +277,7 @@ export default function Home() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="block bg-white border border-gray-200 rounded p-4 hover:border-[#022444] transition"
+                className="block py-4 border-b border-gray-200 hover:bg-gray-50 transition"
                 style={{ textDecoration: "none" }}
               >
                 <h3 className="text-sm mb-1" style={{ color: "#333", fontWeight: "bold" }}>
@@ -309,17 +302,19 @@ export default function Home() {
           >
             Zacznij procedure skladania wniosku ESTA
           </h2>
-          <p className="text-gray-300 mb-8">
+          <p className="mb-8" style={{ color: "white" }}>
             Przygotuj paszport i wypelnij formularz online. Caly proces zajmuje
             okolo 15-20 minut.
           </p>
-          <Link
-            href="/apply/"
-            className="block w-full max-w-md mx-auto bg-[#8d1812] hover:bg-[#6d120e] rounded-lg py-5 px-6 text-center transition shadow-lg"
-            style={{ color: "white", textDecoration: "none" }}
-          >
-            <span className="text-white text-lg font-bold" style={{ color: "white" }}>&#10003; Zloz wniosek ESTA</span>
-          </Link>
+          <div style={{ maxWidth: "360px", margin: "0 auto" }}>
+            <Link
+              href="/apply/"
+              className="block w-full rounded bg-[#8d1812] hover:bg-[#6d120e] transition shadow-lg text-center"
+              style={{ color: "white", textDecoration: "none", padding: "18px 24px" }}
+            >
+              <span style={{ color: "white", fontSize: "18px", fontWeight: "bold" }}>&#10003; Zloz wniosek ESTA</span>
+            </Link>
+          </div>
         </div>
       </section>
     </div>

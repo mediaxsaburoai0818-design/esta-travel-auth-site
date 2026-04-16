@@ -17,7 +17,7 @@ export default function Footer() {
               >
                 ESTA Online
               </p>
-              <p className="text-sm text-gray-300 leading-relaxed">
+              <p className="text-sm leading-relaxed" style={{ color: "white" }}>
                 Kompletny przewodnik po Elektronicznym Systemie Autoryzacji
                 Podrozy (ESTA) do Stanow Zjednoczonych.
               </p>
@@ -25,14 +25,14 @@ export default function Footer() {
 
             {/* ESTA Info links */}
             <div>
-              <h3 className="text-sm font-bold text-white mb-3 uppercase tracking-wider">
+              <h3 className="text-sm font-bold mb-3 uppercase tracking-wider" style={{ color: "white" }}>
                 Informacje o ESTA
               </h3>
               <ul className="space-y-2 text-sm">
                 <li>
                   <Link
                     href="/esta-info/what-is-esta/"
-                    className="text-white underline underline-offset-2 hover:text-gray-200 transition"
+                    className="hover:text-gray-200 transition" style={{ color: "white", textDecoration: "underline" }}
                   >
                     Czym jest ESTA?
                   </Link>
@@ -40,7 +40,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/esta-info/application/"
-                    className="text-white underline underline-offset-2 hover:text-gray-200 transition"
+                    className="hover:text-gray-200 transition" style={{ color: "white", textDecoration: "underline" }}
                   >
                     Sposob skladania wniosku
                   </Link>
@@ -48,7 +48,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/esta-info/fee/"
-                    className="text-white underline underline-offset-2 hover:text-gray-200 transition"
+                    className="hover:text-gray-200 transition" style={{ color: "white", textDecoration: "underline" }}
                   >
                     Oplaty
                   </Link>
@@ -56,7 +56,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/esta-info/expiration/"
-                    className="text-white underline underline-offset-2 hover:text-gray-200 transition"
+                    className="hover:text-gray-200 transition" style={{ color: "white", textDecoration: "underline" }}
                   >
                     Okres waznosci
                   </Link>
@@ -64,7 +64,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/esta-info/status-check/"
-                    className="text-white underline underline-offset-2 hover:text-gray-200 transition"
+                    className="hover:text-gray-200 transition" style={{ color: "white", textDecoration: "underline" }}
                   >
                     Sprawdzenie statusu
                   </Link>
@@ -72,7 +72,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/faq/"
-                    className="text-white underline underline-offset-2 hover:text-gray-200 transition"
+                    className="hover:text-gray-200 transition" style={{ color: "white", textDecoration: "underline" }}
                   >
                     FAQ
                   </Link>
@@ -82,14 +82,14 @@ export default function Footer() {
 
             {/* Site info links */}
             <div>
-              <h3 className="text-sm font-bold text-white mb-3 uppercase tracking-wider">
+              <h3 className="text-sm font-bold mb-3 uppercase tracking-wider" style={{ color: "white" }}>
                 Informacje o stronie
               </h3>
               <ul className="space-y-2 text-sm">
                 <li>
                   <Link
                     href="/site-info/about/"
-                    className="text-white underline underline-offset-2 hover:text-gray-200 transition"
+                    className="hover:text-gray-200 transition" style={{ color: "white", textDecoration: "underline" }}
                   >
                     O nas
                   </Link>
@@ -97,7 +97,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/site-info/contact/"
-                    className="text-white underline underline-offset-2 hover:text-gray-200 transition"
+                    className="hover:text-gray-200 transition" style={{ color: "white", textDecoration: "underline" }}
                   >
                     Kontakt
                   </Link>
@@ -105,7 +105,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/site-info/privacy-policy/"
-                    className="text-white underline underline-offset-2 hover:text-gray-200 transition"
+                    className="hover:text-gray-200 transition" style={{ color: "white", textDecoration: "underline" }}
                   >
                     Polityka prywatnosci
                   </Link>
@@ -113,7 +113,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/site-info/agreement/"
-                    className="text-white underline underline-offset-2 hover:text-gray-200 transition"
+                    className="hover:text-gray-200 transition" style={{ color: "white", textDecoration: "underline" }}
                   >
                     Regulamin
                   </Link>
@@ -121,7 +121,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/site-info/contents-policy/"
-                    className="text-white underline underline-offset-2 hover:text-gray-200 transition"
+                    className="hover:text-gray-200 transition" style={{ color: "white", textDecoration: "underline" }}
                   >
                     Polityka tresci
                   </Link>
@@ -129,7 +129,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/sitemap/"
-                    className="text-white underline underline-offset-2 hover:text-gray-200 transition"
+                    className="hover:text-gray-200 transition" style={{ color: "white", textDecoration: "underline" }}
                   >
                     Mapa strony
                   </Link>
@@ -139,7 +139,7 @@ export default function Footer() {
 
             {/* Official links */}
             <div>
-              <h3 className="text-sm font-bold text-white mb-3 uppercase tracking-wider">
+              <h3 className="text-sm font-bold mb-3 uppercase tracking-wider" style={{ color: "white" }}>
                 Strony oficjalne
               </h3>
               <ul className="space-y-2 text-sm">
@@ -148,7 +148,7 @@ export default function Footer() {
                     href="https://esta.cbp.dhs.gov"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white underline underline-offset-2 hover:text-gray-200 transition"
+                    className="hover:text-gray-200 transition" style={{ color: "white", textDecoration: "underline" }}
                   >
                     Oficjalna strona ESTA (CBP)
                   </a>
@@ -158,7 +158,7 @@ export default function Footer() {
                     href="https://pl.usembassy.gov/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white underline underline-offset-2 hover:text-gray-200 transition"
+                    className="hover:text-gray-200 transition" style={{ color: "white", textDecoration: "underline" }}
                   >
                     Ambasada USA w Polsce
                   </a>
@@ -168,7 +168,7 @@ export default function Footer() {
                     href="https://travel.state.gov/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white underline underline-offset-2 hover:text-gray-200 transition"
+                    className="hover:text-gray-200 transition" style={{ color: "white", textDecoration: "underline" }}
                   >
                     U.S. Department of State
                   </a>
