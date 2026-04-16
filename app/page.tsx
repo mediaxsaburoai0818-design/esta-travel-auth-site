@@ -11,9 +11,9 @@ export default function Home() {
           alt=""
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#022444]/90 via-[#022444]/70 to-[#022444]/50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#022444]/85 to-[#022444]/70" />
         <div className="relative max-w-6xl mx-auto px-4 py-16 md:py-28 w-full">
-          <div className="max-w-3xl">
+          <div className="max-w-3xl mx-auto text-center">
             <h1
               className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 md:mb-6 leading-tight text-white drop-shadow-lg"
               style={{
@@ -25,22 +25,22 @@ export default function Home() {
               Podrozy do USA
             </h1>
             <p className="text-base md:text-xl mb-3 md:mb-4 text-gray-100 leading-relaxed drop-shadow">
-              Kompletny przewodnik po systemie ESTA &mdash; wszystko, co musisz
-              wiedziec o autoryzacji podrozy do Stanow Zjednoczonych.
+              Zlozenie wniosku zajmuje do 3 dni. Prosimy o wczesniejsze
+              zalatwienie formalnosci.
             </p>
             <p className="text-xs md:text-sm mb-6 md:mb-8 text-gray-200 drop-shadow">
               Program Ruchu Bezwizowego (VWP) | Polska jest krajem uprawnionym
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 sm:items-center">
+            <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
               <Link
                 href="/apply/"
-                className="bg-[#8d1812] hover:bg-[#6d120e] text-white font-bold py-3 px-8 text-base transition text-center shadow-lg inline-block w-auto self-start border-[3px] border-double border-[#6d120e]"
+                className="bg-[#8d1812] hover:bg-[#6d120e] text-white font-bold py-4 px-8 text-lg transition text-center shadow-lg inline-block w-full sm:w-auto border-[3px] border-double border-[#6d120e]"
               >
-                Zloz wniosek ESTA
+                &#10003; Zloz wniosek ESTA
               </Link>
               <Link
                 href="/esta-info/what-is-esta/"
-                className="bg-white/10 hover:bg-white/20 text-white px-7 py-3 rounded font-bold text-base transition border border-white/30 text-center inline-block w-auto self-start"
+                className="bg-white/10 hover:bg-white/20 text-white px-7 py-3 rounded font-bold text-base transition border border-white/30 text-center inline-block w-full sm:w-auto"
               >
                 Dowiedz sie wiecej
               </Link>
@@ -49,27 +49,30 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Red border line below hero */}
+      <div className="h-1 bg-[#8d1812]" />
+
       {/* Key facts */}
       <section className="py-12 bg-white border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
-              <p className="text-2xl font-bold text-[#022444]">$21</p>
-              <p className="text-sm text-gray-500 mt-1">Oficjalna oplata</p>
+              <p className="text-3xl md:text-4xl font-bold text-[#022444]">$21</p>
+              <p className="text-sm text-gray-500 mt-2">Oficjalna oplata</p>
             </div>
             <div>
-              <p className="text-2xl font-bold text-[#022444]">72h</p>
-              <p className="text-sm text-gray-500 mt-1">
+              <p className="text-3xl md:text-4xl font-bold text-[#022444]">72h</p>
+              <p className="text-sm text-gray-500 mt-2">
                 Maks. czas rozpatrywania
               </p>
             </div>
             <div>
-              <p className="text-2xl font-bold text-[#022444]">2 lata</p>
-              <p className="text-sm text-gray-500 mt-1">Okres waznosci</p>
+              <p className="text-3xl md:text-4xl font-bold text-[#022444]">2 lata</p>
+              <p className="text-sm text-gray-500 mt-2">Okres waznosci</p>
             </div>
             <div>
-              <p className="text-2xl font-bold text-[#022444]">90 dni</p>
-              <p className="text-sm text-gray-500 mt-1">Maks. pobyt w USA</p>
+              <p className="text-3xl md:text-4xl font-bold text-[#022444]">90 dni</p>
+              <p className="text-sm text-gray-500 mt-2">Maks. pobyt w USA</p>
             </div>
           </div>
         </div>
@@ -78,7 +81,7 @@ export default function Home() {
       {/* ESTA overview */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4">
-          <h2 className="bg-[#022444] text-white py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6">
+          <h2 className="bg-[#022444] text-white py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-6" style={{ color: "white", textShadow: "0 1px 2px rgba(0,0,0,0.3)" }}>
             Czym jest ESTA?
           </h2>
           <p className="text-gray-600 mb-4 leading-relaxed">
@@ -105,7 +108,7 @@ export default function Home() {
       {/* Application steps */}
       <section className="py-16 bg-[#F5F5F5]">
         <div className="max-w-3xl mx-auto px-4">
-          <h2 className="bg-[#022444] text-white py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-8">
+          <h2 className="bg-[#022444] text-white py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-8" style={{ color: "white", textShadow: "0 1px 2px rgba(0,0,0,0.3)" }}>
             Jak zlozyc wniosek ESTA?
           </h2>
 
@@ -185,7 +188,7 @@ export default function Home() {
       {/* FAQ preview */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4">
-          <h2 className="bg-[#022444] text-white py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-8">
+          <h2 className="bg-[#022444] text-white py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-8" style={{ color: "white", textShadow: "0 1px 2px rgba(0,0,0,0.3)" }}>
             Najczesciej zadawane pytania
           </h2>
 
@@ -239,7 +242,7 @@ export default function Home() {
       {/* Related pages */}
       <section className="py-16 bg-[#F5F5F5]">
         <div className="max-w-3xl mx-auto px-4">
-          <h2 className="bg-[#022444] text-white py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-8">
+          <h2 className="bg-[#022444] text-white py-4 px-6 text-lg sm:text-xl md:text-2xl font-bold leading-snug mb-8" style={{ color: "white", textShadow: "0 1px 2px rgba(0,0,0,0.3)" }}>
             Przydatne strony
           </h2>
 
@@ -309,9 +312,9 @@ export default function Home() {
           </p>
           <Link
             href="/apply/"
-            className="inline-block bg-[#8d1812] hover:bg-[#6d120e] text-white font-bold py-3 px-8 transition border-[3px] border-double border-[#6d120e]"
+            className="inline-block bg-[#8d1812] hover:bg-[#6d120e] text-white font-bold py-4 px-8 text-lg transition border-[3px] border-double border-[#6d120e]"
           >
-            Zloz wniosek ESTA
+            &#10003; Zloz wniosek ESTA
           </Link>
         </div>
       </section>

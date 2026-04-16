@@ -102,7 +102,7 @@ export default function Expiration() {
           href="/apply/"
           className="bg-[#8d1812] hover:bg-[#6d120e] text-white font-bold py-3 px-8 text-sm transition text-center border-[3px] border-double border-[#6d120e]"
         >
-          Zloz wniosek ESTA
+          &#10003; Zloz wniosek ESTA
         </Link>
       </div>
     </div>

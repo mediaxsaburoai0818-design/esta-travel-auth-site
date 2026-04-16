@@ -30,14 +30,17 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
+          <Link href="/" className="flex flex-col">
             <span
-              className="text-xl font-bold tracking-wide text-white"
+              className="text-xl md:text-2xl font-bold tracking-wide text-white leading-tight"
               style={{
                 fontFamily: "var(--font-noto-serif), serif",
               }}
             >
               ESTA Online
+            </span>
+            <span className="text-[10px] md:text-xs text-gray-300 tracking-wider">
+              Autoryzacja podrozy do USA
             </span>
           </Link>
 
@@ -113,7 +116,7 @@ export default function Header() {
               href="/apply/"
               className="ml-3 bg-[#8d1812] hover:bg-[#6d120e] text-white font-bold py-3 px-8 text-sm transition border-[3px] border-double border-[#6d120e]"
             >
-              Zloz wniosek ESTA
+              &#10003; Zloz wniosek ESTA
             </Link>
           </nav>
 
@@ -252,7 +255,7 @@ export default function Header() {
               className="block bg-[#8d1812] hover:bg-[#6d120e] text-white font-bold py-3 px-8 text-sm text-center mt-2 border-[3px] border-double border-[#6d120e]"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Zloz wniosek ESTA
+              &#10003; Zloz wniosek ESTA
             </Link>
           </nav>
         )}
