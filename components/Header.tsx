@@ -26,7 +26,7 @@ export default function Header() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   return (
-    <header className="bg-[#022444] sticky top-0 z-50">
+    <header className="sticky top-0 z-50" style={{ backgroundColor: "#022444" }}>
       <div className="max-w-6xl mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           {/* Logo */}
