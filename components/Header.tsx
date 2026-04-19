@@ -54,7 +54,7 @@ export default function Header() {
               onMouseEnter={() => setDropdownOpen(true)}
               onMouseLeave={() => setDropdownOpen(false)}
             >
-              <button className="text-gray-200 hover:text-white px-3 py-2 text-sm font-medium transition">
+              <button className="text-white hover:text-gray-200 px-3 py-2 text-sm font-medium transition">
                 Informacje o ESTA
               </button>
               {dropdownOpen && (
@@ -104,13 +104,13 @@ export default function Header() {
 
             <Link
               href="/faq/"
-              className="text-gray-200 hover:text-white px-3 py-2 text-sm font-medium transition"
+              className="text-white hover:text-gray-200 px-3 py-2 text-sm font-medium transition"
             >
               FAQ
             </Link>
             <Link
               href="/site-info/contact/"
-              className="text-gray-200 hover:text-white px-3 py-2 text-sm font-medium transition"
+              className="text-white hover:text-gray-200 px-3 py-2 text-sm font-medium transition"
             >
               Kontakt
             </Link>
@@ -125,7 +125,8 @@ export default function Header() {
 
           {/* Mobile menu button */}
           <button
-            className="lg:hidden text-white p-2"
+            className="lg:hidden p-2"
+            style={{ color: "white" }}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Menu"
           >
@@ -164,75 +165,75 @@ export default function Header() {
         {/* Mobile menu */}
         {mobileMenuOpen && (
           <nav className="lg:hidden mt-3 pb-3 border-t border-white/20 pt-3 space-y-1">
-            <p className="px-3 py-1 text-xs text-gray-300 uppercase tracking-wider font-bold">
+            <p className="px-3 py-1 text-xs uppercase tracking-wider font-bold" style={{ color: "white" }}>
               Informacje o ESTA
             </p>
             <Link
               href="/esta-info/what-is-esta/"
-              className="block text-gray-200 hover:text-white hover:bg-white/10 px-4 py-2 text-sm"
+              className="block hover:bg-white/10 px-4 py-2 text-sm" style={{ color: "white", textDecoration: "none" }}
               onClick={() => setMobileMenuOpen(false)}
             >
               Czym jest ESTA?
             </Link>
             <Link
               href="/esta-info/application/"
-              className="block text-gray-200 hover:text-white hover:bg-white/10 px-4 py-2 text-sm"
+              className="block hover:bg-white/10 px-4 py-2 text-sm" style={{ color: "white", textDecoration: "none" }}
               onClick={() => setMobileMenuOpen(false)}
             >
               Sposob skladania wniosku
             </Link>
             <Link
               href="/esta-info/fee/"
-              className="block text-gray-200 hover:text-white hover:bg-white/10 px-4 py-2 text-sm"
+              className="block hover:bg-white/10 px-4 py-2 text-sm" style={{ color: "white", textDecoration: "none" }}
               onClick={() => setMobileMenuOpen(false)}
             >
               Oplaty
             </Link>
             <Link
               href="/esta-info/expiration/"
-              className="block text-gray-200 hover:text-white hover:bg-white/10 px-4 py-2 text-sm"
+              className="block hover:bg-white/10 px-4 py-2 text-sm" style={{ color: "white", textDecoration: "none" }}
               onClick={() => setMobileMenuOpen(false)}
             >
               Okres waznosci
             </Link>
             <Link
               href="/esta-info/status-check/"
-              className="block text-gray-200 hover:text-white hover:bg-white/10 px-4 py-2 text-sm"
+              className="block hover:bg-white/10 px-4 py-2 text-sm" style={{ color: "white", textDecoration: "none" }}
               onClick={() => setMobileMenuOpen(false)}
             >
               Sprawdzenie statusu
             </Link>
             <Link
               href="/esta-info/place-of-birth/"
-              className="block text-gray-200 hover:text-white hover:bg-white/10 px-4 py-2 text-sm"
+              className="block hover:bg-white/10 px-4 py-2 text-sm" style={{ color: "white", textDecoration: "none" }}
               onClick={() => setMobileMenuOpen(false)}
             >
               Miejsce urodzenia / adres
             </Link>
             <Link
               href="/esta-info/us-contact/"
-              className="block text-gray-200 hover:text-white hover:bg-white/10 px-4 py-2 text-sm"
+              className="block hover:bg-white/10 px-4 py-2 text-sm" style={{ color: "white", textDecoration: "none" }}
               onClick={() => setMobileMenuOpen(false)}
             >
               Dane kontaktowe w USA
             </Link>
             <Link
               href="/esta-info/official-cbp/"
-              className="block text-gray-200 hover:text-white hover:bg-white/10 px-4 py-2 text-sm"
+              className="block hover:bg-white/10 px-4 py-2 text-sm" style={{ color: "white", textDecoration: "none" }}
               onClick={() => setMobileMenuOpen(false)}
             >
               Oficjalna strona CBP
             </Link>
             <Link
               href="/esta-info/mobile-app/"
-              className="block text-gray-200 hover:text-white hover:bg-white/10 px-4 py-2 text-sm"
+              className="block hover:bg-white/10 px-4 py-2 text-sm" style={{ color: "white", textDecoration: "none" }}
               onClick={() => setMobileMenuOpen(false)}
             >
               Aplikacja mobilna
             </Link>
             <Link
               href="/esta-info/guam/"
-              className="block text-gray-200 hover:text-white hover:bg-white/10 px-4 py-2 text-sm"
+              className="block hover:bg-white/10 px-4 py-2 text-sm" style={{ color: "white", textDecoration: "none" }}
               onClick={() => setMobileMenuOpen(false)}
             >
               Wjazd na Guam
@@ -240,14 +241,14 @@ export default function Header() {
             <div className="border-t border-white/20 mt-2 pt-2">
               <Link
                 href="/faq/"
-                className="block text-gray-200 hover:text-white hover:bg-white/10 px-4 py-2 text-sm"
+                className="block hover:bg-white/10 px-4 py-2 text-sm" style={{ color: "white", textDecoration: "none" }}
                 onClick={() => setMobileMenuOpen(false)}
               >
                 FAQ
               </Link>
               <Link
                 href="/site-info/contact/"
-                className="block text-gray-200 hover:text-white hover:bg-white/10 px-4 py-2 text-sm"
+                className="block hover:bg-white/10 px-4 py-2 text-sm" style={{ color: "white", textDecoration: "none" }}
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Kontakt
