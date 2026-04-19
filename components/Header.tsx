@@ -126,6 +126,7 @@ export default function Header() {
           {/* Mobile menu button */}
           <button
             className="lg:hidden p-2"
+            style={{ backgroundColor: "transparent", border: "none", cursor: "pointer" }}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Menu"
           >
